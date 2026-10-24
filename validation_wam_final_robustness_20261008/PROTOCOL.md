@@ -1,5 +1,7 @@
 # Frozen final robustness protocol (declared before measurement)
 
+> Archive navigation note (2026-10-22): this is a historical protocol/report. Script names and machine-local artifacts below describe the original run and may no longer exist in this checkout. See [current commands](../README.md), [migration coverage](../docs/RESEARCH_HISTORY.md), and [中文实验流程](../docs/WORKFLOW_ZH.md). Original measurements and protocol text below are retained.
+
 Run the official WAM commit and checkpoint recorded in the earlier validation, with the same ten images, three payload seeds, eight masks, packet codec, DBSCAN settings, and spatial repetition `[A,B,C,D,D,C,B,A]`. All thirty clean marked images receive the same JPEG Q75/Q50, Gaussian noise σ2/σ5 (8-bit scale), and rotations ±1°, ±2°, ±5°, ±10°. Rotations use Pillow bicubic resampling without canvas expansion, black fill, and no decoder access to the angle. Unmarked originals form the negative control. One deterministic 75%-area blind crop per clean marked image receives JPEG Q75.
 
 For per-region scoring only, masks are cropped or rotated after blind inference. Global decoding receives only attacked pixels. Raw BER denominator is 32 times the number of oracle-matched detected packets, and is reported alongside the matched count; missing packets are erasures, not bit errors. False global outputs include a decoded payload unequal to ground truth. Unmarked-image decoding is a small negative control, not a calibrated false-positive estimate.

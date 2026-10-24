@@ -1,4 +1,6 @@
-# Pilot protocol (written before measurement)
+# Historical pilot protocol (written before measurement)
+
+> Archive note: this document describes the early 64-bit DWT/DCT pilot, not the final 32-bit WAM system. Current commands and the staged WAM experiment are documented in [README.md](README.md) and [docs/WORKFLOW_ZH.md](docs/WORKFLOW_ZH.md). The original protocol below is retained as historical context.
 
 Scope: validate the latest referenced conversation's payload-coding hypothesis on actual images using the unmodified invisible-watermark dwtDct backend. WAM is a future transfer experiment, not a claimed result.
 

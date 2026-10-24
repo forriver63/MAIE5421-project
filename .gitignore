@@ -10,6 +10,7 @@ Thumbs.db
 __pycache__/
 *.py[cod]
 *.so
+*.egg-info/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
@@ -67,3 +68,7 @@ validation_wam_hierarchical_final_20261008/results/*_packets.csv
 
 # Generated PDF duplicates; Markdown reports and final PNG figures are retained
 **/results/*.pdf
+
+# Regenerable refactored-experiment outputs (frozen evidence lives in validation_wam_*/)
+experiments/*/results/
+experiments/*/figures/

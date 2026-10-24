@@ -1,6 +1,11 @@
-"""Fixed (8,4) GF(256) Vandermonde MDS and spatial repetition control."""
+"""Fixed (8,4) GF(256) Vandermonde MDS and spatial repetition control.
+
+Migrated verbatim from validation_wam_hierarchical_final_20261008/outer_codes.py
+to preserve bit-identical behavior.
+"""
 from __future__ import annotations
 
+import functools
 from itertools import combinations
 
 PRIMITIVE_POLYNOMIAL = 0x11D
@@ -37,7 +42,7 @@ MDS_ROWS = tuple(tuple(gf_pow(point, degree) for degree in range(4)) for point i
 
 def encode_mds(source: tuple[int, int, int, int]) -> tuple[int, ...]:
     assert len(source) == 4 and all(0 <= item < 256 for item in source)
-    return tuple(__import__("functools").reduce(
+    return tuple(functools.reduce(
         int.__xor__, (gf_mul(coefficient, symbol) for coefficient, symbol in zip(row, source)), 0)
         for row in MDS_ROWS)
 
@@ -76,7 +81,7 @@ def collect_accepted_packets(decoded_packets: list[dict]) -> tuple[dict[int, int
     unique = {packet_id: next(iter(values)) for packet_id, values in candidates.items() if len(values) == 1}
     return unique, {"accepted_clusters": sum(packet["status"] == "ACCEPTED" for packet in decoded_packets),
                     "unique_valid_ids": len(unique), "conflicting_ids": sorted(conflicts),
-                    "erased_id_count": 8-len(unique)}
+                    "erased_id_count": 8 - len(unique)}
 
 
 def decode_mds(unique: dict[int, int]) -> dict:
@@ -117,7 +122,7 @@ def exhaustive_mds_verification(test_sources: list[tuple[int, int, int, int]]) -
             recovered = solve_four(rows, [coded[index] for index in subset])
             assert recovered == source, (subset, source, recovered)
     return {"subsets": len(subsets), "test_sources": len(test_sources),
-            "recoveries": len(subsets)*len(test_sources),
+            "recoveries": len(subsets) * len(test_sources),
             "every_four_row_subset_invertible": True,
             "all_exact": True,
             "gf_primitive_polynomial_hex": hex(PRIMITIVE_POLYNOMIAL),

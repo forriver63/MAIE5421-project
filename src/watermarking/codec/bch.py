@@ -1,9 +1,12 @@
 """Primitive narrow-sense binary BCH(31, 16, 7), extended by one parity bit.
 
 The generator is constructed from roots alpha^1,...,alpha^6 in GF(32), with
-primitive field polynomial x^5 + x^2 + 1.  A syndrome table corrects up to
-three bit flips.  The extra parity bit makes the minimum distance eight:
+primitive field polynomial x^5 + x^2 + 1. A syndrome table corrects up to
+three bit flips. The extra parity bit makes the minimum distance eight:
 all patterns of at most three flips are corrected; four are detected.
+
+Migrated verbatim from validation_wam_inner_ecc_20261008/bch31.py to preserve
+bit-identical behavior.
 """
 from __future__ import annotations
 

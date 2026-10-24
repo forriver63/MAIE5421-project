@@ -1,5 +1,7 @@
 # Frozen staged protocol — 2026-10-08
 
+> Archive navigation note (2026-10-22): this is a historical protocol/report. Script names and machine-local artifacts below describe the original run and may no longer exist in this checkout. See [current commands](../README.md), [migration coverage](../docs/RESEARCH_HISTORY.md), and [中文实验流程](../docs/WORKFLOW_ZH.md). Original measurements and protocol text below are retained.
+
 This protocol is written before WAM measurements. The previous official WAM validation directory remains read-only.
 
 ## Phase 1: codec

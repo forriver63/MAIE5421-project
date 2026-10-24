@@ -27,13 +27,13 @@ The design trades capacity for robustness: eight 32-bit WAM messages carry one 3
 
 ## Why this design
 
-The first official-WAM experiment localized all failed clean packets, but eight packets contained only 1–3 incorrect bits. BCH corrected this failure mode: the paired four-region experiment improved exact protected payload recovery from 115/120 raw packets to 120/120 useful payloads. CRC then rejected many packets damaged beyond the code radius, while spatial repetition recovered a global payload when one copy of a source byte disappeared.
+The original uncoded four-region baseline recovered 112/120 exact packets; its eight failed packets were localized but contained 1–3 incorrect bits. In a subsequent BCH-protected run, the same received messages yielded 115/120 exact raw codewords before correction and 120/120 exact useful payloads after correction. These are different comparisons and payload capacities. BCH-only crops then produced 8/720 silent wrong decodes, motivating CRC filtering. Spatial repetition supplies a second copy when a source byte is erased.
 
 An outer MDS(8,4) code was also tested against a strong repetition baseline under identical embedding budgets. Across 180 paired blind crops, MDS recovered 162 global payloads and repetition recovered 161. The one-case difference did not meet the predeclared improvement gate, so the simpler repetition scheme was retained. MDS is not part of the final method.
 
-## Main measured results
+## Historical measured results
 
-The final robustness run used 10 public natural images, 3 deterministic payload seeds per image, and 8 localized packets per marked image.
+The archived final robustness run used 10 public natural images, 3 deterministic payload seeds per image, and 8 localized packets per marked image.
 
 | Condition | Exact 32-bit global recovery |
 |---|---:|
@@ -56,12 +56,13 @@ Full interpretation and limitations are in the [final validation report](validat
 
 ## Repository map
 
-- `validation_wam_20261007/`: first official-WAM execution and clean localized-message baseline.
-- `validation_wam_inner_ecc_20261008/`: BCH implementation, exhaustive codec tests, and four-region paired validation.
-- `validation_wam_hierarchical_final_20261008/`: CRC packet format, eight-region feasibility, and MDS-versus-repetition comparison.
-- `validation_wam_final_robustness_20261008/`: final JPEG, noise, rotation, combined-attack, and negative-control evaluation.
-- `docs/RESEARCH_HISTORY.md`: concise evidence chain and retained artifacts.
-- `src/` and `EXPERIMENT_PLAN.md`: earlier DWT/DCT synthetic pilot retained as project history; its results are not presented as WAM evidence.
+- `src/watermarking/`: importable package — error-control codecs (`codec/`), WAM wrapper (`wam/`), attacks, metrics, data loading, eval, and the CLI/web pipeline.
+- `experiments/`: runnable entry points — `baseline/`, `inner_ecc/`, `hierarchical/`, `robustness/`, `ablation/`.
+- `tests/`: codec verification and regression tests; exhaustive packet injections through weight six can take time.
+- `validation_wam_*/`: four historical evidence directories, retaining protocols, reports, CSV/JSON results and selected figures. The first uses `official_results/`. New runs write under `experiments/`; only part of the original staged workflow has been migrated. See the [migration map](docs/RESEARCH_HISTORY.md).
+- [docs/WORKFLOW_ZH.md](docs/WORKFLOW_ZH.md): detailed Chinese runbook, experimental reasoning and archive policy.
+- [docs/RESEARCH_HISTORY.md](docs/RESEARCH_HISTORY.md): provenance, migration coverage and audit findings.
+- `src/pilot.py`, `src/offline_backend.py`, and `EXPERIMENT_PLAN.md`: earlier DWT/DCT synthetic pilot retained as project history; its results are not presented as WAM evidence.
 
 Large local environments, the upstream WAM checkout, raw logs, caches, and downloaded model weights are intentionally excluded from Git.
 
@@ -75,8 +76,10 @@ Create an environment and install the pinned direct dependencies:
 python3.10 -m venv .venv
 . .venv/bin/activate
 python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+python -m pip install -e ".[dev]"
 ```
+
+`pyproject.toml` installs the package, `wm` CLI, web dependencies and development tools; `requirements.txt` retains the historical scientific dependency pins and is not sufficient by itself for the current package. Existing local installations only need environment activation.
 
 Clone the official WAM repository at the exact validated commit. The clone remains untracked by this project:
 
@@ -102,40 +105,68 @@ Expected SHA-256:
 90ef232384e023bd63245eb0c131abd69d2afc7b8f17a71ccedceb542bf009e2
 ```
 
-The 360 MB checkpoint is ignored and must not be committed.
+The 360 MB checkpoint is ignored and must not be committed. The pinned checkout also supplies `checkpoints/params.json`. For another checkout location, set `WAM_PATH` (for example `export WAM_PATH="$PWD/third_party/watermark-anything"`). Current runners use CPU and do not train or fine-tune WAM.
 
-## Reproduction
+The dataset loader prefers bundled scikit-image samples, then uses the pinned scikit-image fetcher/cache. Missing samples may require network access and `python -m pip install pooch`. Prepared inputs and their SHA-256 hashes are saved per experiment.
 
-Run the codec tests from the repository root:
+## Run the current code
 
-```sh
-.venv/bin/python validation_wam_inner_ecc_20261008/test_bch31.py
-(
-  cd validation_wam_hierarchical_final_20261008
-  ../.venv/bin/python test_packet_codec.py
-  ../.venv/bin/python test_outer_codes.py
-)
-```
-
-Run a minimal official-WAM embed/detect smoke test after installing the upstream source and checkpoint:
+All commands below run from the repository root after `source .venv/bin/activate`.
 
 ```sh
-(
-  cd validation_wam_20261007/watermark-anything
-  PYTHONPATH=. ../../.venv/bin/python ../quick_probe.py
-)
+python -m pytest
+wm embed input.png marked.png --payload 0x12345678
+wm detect marked.png --json
 ```
 
-The final benchmark reuses the public scikit-image inputs and manifest produced by the first official validation. Generate those prerequisites once, then run the final evaluation:
+Embedding converts to RGB and center-crops/resizes to **512×512**, matching the fixed region layout; it does not preserve arbitrary original dimensions. Use PNG for the initial output. Detection takes only the marked/attacked pixels, preserving the input dimensions. A successful example payload prints as decimal `305419896`; recovery is not guaranteed for every image. The file round trip includes 8-bit quantization, whereas the experimental clean condition detects the in-memory marked tensor.
+
+Optional web interface (model loaded once):
 
 ```sh
-.venv/bin/python validation_wam_20261007/run_validation.py
-.venv/bin/python validation_wam_final_robustness_20261008/run_robustness.py
-.venv/bin/python validation_wam_final_robustness_20261008/finalize.py
-.venv/bin/python validation_wam_final_robustness_20261008/verify_artifacts.py
+python -m uvicorn watermarking.web:app --host 127.0.0.1 --port 8000
 ```
 
-This is the expensive path and rewrites generated result files. The committed summaries and figures already contain the executed evidence. See each sprint's `PROTOCOL.md` and validation report for the predeclared gates and exact interpretation.
+Open <http://127.0.0.1:8000/docs> for `/embed`, `/detect`, and `/health`.
+
+### Final robustness measurements
+
+For a **fresh run**, choose a new output directory:
+
+```sh
+python experiments/robustness/run.py --output-dir output/robustness-run-01
+python experiments/robustness/finalize.py --output-dir output/robustness-run-01
+```
+
+This generates `results/`, `figures/`, and `logs/` below that directory. The run evaluates 30 image/payload combinations × 14 conditions = 420 cases, plus 10 unmarked controls. It records 3,360 region rows. The default directory is `experiments/robustness/`; existing CSVs are refused unless reuse is explicitly requested. Partial runs are not automatically resumed.
+
+To reaggregate existing complete CSVs without model inference:
+
+```sh
+python experiments/robustness/run.py --reuse
+python experiments/robustness/finalize.py
+```
+
+Reuse checks file row counts; it does not certify that CSVs were produced by the current source, weights or environment. An isolated output directory is the recommended way to measure code changes. The inverse-angle search described in the historical protocol is not implemented here: if its trigger fires, the runner stops after saving baseline results instead of claiming completion.
+
+The compatibility wrapper accepts a run directory and an optional `--reuse`:
+
+```sh
+sh validation_wam_final_robustness_20261008/REPRODUCE.sh output/robustness-run-02
+```
+
+### Earlier experimental questions
+
+```sh
+python experiments/baseline/run.py       # clean 2 → 4 → 8 region screening
+python experiments/inner_ecc/run.py      # four-region BCH clean experiment
+python experiments/hierarchical/run.py   # paired repetition/MDS blind crops
+python experiments/ablation/run.py       # repetition/MDS on clean and JPEG75
+```
+
+These runners prepare their own inputs, write under their respective `experiments/<name>/` directories, and overwrite their generated results. They are independent entry points, not a pipeline that consumes the previous command's output. The research rationale is sequential, but running these four commands does **not** replay every historical prerequisite phase. In particular, BCH-only crops, four-region CRC crops and independent eight-packet feasibility remain archived evidence rather than current standalone runners. `ablation` is an outer-code comparison, not a full BCH/CRC removal study.
+
+Keep historical reports tied to their historical measurements; do not replace their numbers with fresh runs without identifying the new experiment. See [research history](docs/RESEARCH_HISTORY.md) for the original source revision and exact migration coverage.
 
 ## Limitations
 

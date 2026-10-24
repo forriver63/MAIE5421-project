@@ -1,5 +1,7 @@
 # Final WAM robustness validation
 
+> Archive navigation note (2026-10-22): this is a historical protocol/report. Script names and machine-local artifacts below describe the original run and may no longer exist in this checkout. See [current commands](../README.md), [migration coverage](../docs/RESEARCH_HISTORY.md), and [中文实验流程](../docs/WORKFLOW_ZH.md). Original measurements and protocol text below are retained.
+
 Executed on 2026-10-08. The frozen candidate is localized official WAM with 8 regions, BCH(31,16) t=3 plus one overall parity bit, CRC-5, and spatial repetition `[A,B,C,D,D,C,B,A]`. Four source bytes form the 32-bit useful global payload. Each region embeds 3 ID bits + 8 data bits + 5 CRC bits through a 32-bit WAM word. No model training, source modification, new ECC, or MDS was used in this sprint.
 
 ## Environment and reproducibility

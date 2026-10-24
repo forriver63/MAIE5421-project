@@ -2,9 +2,13 @@
 set -eu
 cd "$(dirname "$0")/.."
 PYTHON=".venv/bin/python"
-"$PYTHON" validation_wam_final_robustness_20261008/run_robustness.py \
-  > validation_wam_final_robustness_20261008/logs/full_run.log 2>&1
-"$PYTHON" validation_wam_final_robustness_20261008/finalize.py \
-  > validation_wam_final_robustness_20261008/logs/finalize.log 2>&1
-"$PYTHON" validation_wam_final_robustness_20261008/verify_artifacts.py \
-  > validation_wam_final_robustness_20261008/logs/verification.log 2>&1
+
+# Refactored reproduction: robustness evaluation now lives in experiments/.
+# Optional first argument selects a fresh run directory; second may be --reuse.
+RUN_DIR="${1:-experiments/robustness}"
+if [ "${2:-}" = "--reuse" ]; then
+    "$PYTHON" experiments/robustness/run.py --output-dir "$RUN_DIR" --reuse
+else
+    "$PYTHON" experiments/robustness/run.py --output-dir "$RUN_DIR"
+fi
+"$PYTHON" experiments/robustness/finalize.py --output-dir "$RUN_DIR"

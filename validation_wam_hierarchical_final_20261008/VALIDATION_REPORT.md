@@ -1,5 +1,7 @@
 # Final hierarchical watermark method validation
 
+> Archive navigation note (2026-10-22): this is a historical protocol/report. Script names and machine-local artifacts below describe the original run and may no longer exist in this checkout. See [current commands](../README.md), [migration coverage](../docs/RESEARCH_HISTORY.md), and [中文实验流程](../docs/WORKFLOW_ZH.md). Original measurements and protocol text below are retained.
+
 Date: 2026-10-08. **Decision: MODIFY.**
 
 The tested localized WAM + BCH + CRC-5 channel works well enough to justify a course-project implementation, but the proposed **outer MDS(8,4) layer did not deliver a meaningful exact global-payload recovery advantage over a strong spatial repetition baseline** at equal embedding budget. The final course method should therefore not be presented as MDS-based on this evidence. A simpler WAM + BCH + CRC + spatial repetition route is better supported by this sprint; the course's JPEG/rotation/noise requirements still need their own evaluation.

@@ -11,8 +11,8 @@
     "mean_psnr": 47.14745784356255,
     "mean_ssim": 0.9937387426694234,
     "mean_union_iou": 0.9496914584346526,
-    "mean_embed_seconds": 0.3401901458312447,
-    "mean_detect_seconds": 0.5579573471981955
+    "mean_embed_seconds": 0.33990194856693656,
+    "mean_detect_seconds": 0.5870051126665203
   },
   {
     "region_count": 4,
@@ -26,7 +26,7 @@
     "mean_psnr": 44.08383420582539,
     "mean_ssim": 0.9884136557579041,
     "mean_union_iou": 0.9442908467184404,
-    "mean_embed_seconds": 0.6789570374336714,
-    "mean_detect_seconds": 0.9931696014362388
+    "mean_embed_seconds": 0.7401207944004757,
+    "mean_detect_seconds": 1.1545939916657517
   }
 ]
