@@ -23,6 +23,8 @@ dependencies = [
     "lpips==0.1.4",
     "scikit-image==0.24.0",
     "scikit-learn==1.5.2",
+    "pandas>=2.0,<3",
+    "psutil>=5.9,<8",
     "fastapi>=0.110",
     "uvicorn>=0.29",
     "python-multipart>=0.0.9",

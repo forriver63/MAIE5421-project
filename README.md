@@ -68,6 +68,11 @@ Large local environments, the upstream WAM checkout, raw logs, caches, and downl
 
 ## Setup
 
+The additional 100-image component ablation and system comparison are documented in
+[ablation/README.md](ablation/README.md) and [baseline/README.md](baseline/README.md).
+These use a shared 28-condition protocol and PNG-quantized embeddings. The historical
+10-image measurements and commands below remain tied to their original experiments.
+
 The verified local run used Python 3.10.14, PyTorch 2.5.1, Torchvision 0.20.1, NumPy 1.26.4, Pillow 10.4.0, and scikit-image 0.24.0. CPU execution was used on macOS arm64; upstream WAM also documents a CUDA/Linux configuration.
 
 Create an environment and install the pinned direct dependencies:

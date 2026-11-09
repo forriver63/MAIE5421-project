@@ -20,7 +20,8 @@ from notebooks.inference_utils import multiwm_dbscan  # noqa: E402
 from ..codec.bch import bits_to_int
 
 
-def detect_blind(wam, image: torch.Tensor, epsilon: int = 1, min_samples: int = 500) -> dict:
+def detect_blind(wam, image: torch.Tensor, epsilon: int = 1, min_samples: int = 500,
+                 clusterer=None) -> dict:
     start = time.perf_counter()
     with torch.inference_mode():
         preds = wam.detect(image)["preds"]
@@ -31,7 +32,7 @@ def detect_blind(wam, image: torch.Tensor, epsilon: int = 1, min_samples: int = 
     error = None
     if bool((mask_probability > 0.5).any()):
         try:
-            centroids, labels = multiwm_dbscan(
+            centroids, labels = (clusterer or multiwm_dbscan)(
                 bit_logits, mask_probability, epsilon=epsilon, min_samples=min_samples)
         except Exception as exc:
             error = f"{type(exc).__name__}: {exc}"

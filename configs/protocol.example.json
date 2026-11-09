@@ -1,0 +1,23 @@
+{
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 20261106,
+  "core_attack_instances": 20,
+  "device": "cpu",
+  "expected_calibration_images": 20,
+  "expected_test_images": 100,
+  "extended_attack_instances": 8,
+  "hidden_marker_hex": "a5c3",
+  "hidden_marker_max_errors": 1,
+  "hidden_strength": 0.3615234375,
+  "manifest": "data/images.json",
+  "payload_seeds": [
+    0,
+    1,
+    2
+  ],
+  "png_roundtrip": true,
+  "root": "..",
+  "schema": 1,
+  "torch_threads": 4,
+  "hidden_protocol": "native512"
+}

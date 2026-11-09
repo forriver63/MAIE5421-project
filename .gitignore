@@ -72,3 +72,16 @@ validation_wam_hierarchical_final_20261008/results/*_packets.csv
 # Regenerable refactored-experiment outputs (frozen evidence lives in validation_wam_*/)
 experiments/*/results/
 experiments/*/figures/
+
+# Unified benchmark caches and large per-case intermediates
+**/raw_cases/
+**/raw_masks/
+*.npz
+*.tar
+/runs/
+/cache/
+/downloads/
+/models/
+/evidence/
+/provenance/
+/source_snapshots/

@@ -1,0 +1,4 @@
+variant,full_only,other_only,both,neither
+psnr_matched,5594,141,1268,1397
+default045,4681,244,2181,1294
+original030,6132,79,730,1459
