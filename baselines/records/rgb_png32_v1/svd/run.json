@@ -1,0 +1,160 @@
+{
+  "protocol_id": "rgb_png32_v1",
+  "method": "svd",
+  "config": {
+    "delta": 12.0,
+    "block_size": 4,
+    "color_mode": "rgb_y"
+  },
+  "git_head": "40223caa325322cb224d4a3596efe83e472d8487",
+  "dataset_commit": "e43778855daee459079feb6394150355d66d5744",
+  "dataset": {
+    "repo": "https://github.com/forriver63/MAIE5421-project",
+    "commit": "e43778855daee459079feb6394150355d66d5744",
+    "images": [
+      {
+        "image_index": 0,
+        "name": "astronaut",
+        "file": "team10/astronaut.png",
+        "sha256": "5056b05608d58b1fb791eb4070748a49f08d9ab57e9c950ca48fe7baf33db515",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "source_path": "validation_wam_20261007/official_results/inputs/astronaut.png"
+      },
+      {
+        "image_index": 1,
+        "name": "coffee",
+        "file": "team10/coffee.png",
+        "sha256": "bf123ce0ebebe224a8db294a165efc3b4a0fa96978451decf1301138017414ba",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "source_path": "validation_wam_20261007/official_results/inputs/coffee.png"
+      },
+      {
+        "image_index": 2,
+        "name": "chelsea",
+        "file": "team10/chelsea.png",
+        "sha256": "00a5e010b0ac37dbcf0d31f09fcd88e793a5be62ca181fb700de745aa45575cb",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "source_path": "validation_wam_20261007/official_results/inputs/chelsea.png"
+      },
+      {
+        "image_index": 3,
+        "name": "rocket",
+        "file": "team10/rocket.png",
+        "sha256": "86e91780f0d6687e7ce95bb399b3209450824f5802e849726e842428351f641e",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "source_path": "validation_wam_20261007/official_results/inputs/rocket.png"
+      },
+      {
+        "image_index": 4,
+        "name": "hubble",
+        "file": "team10/hubble.png",
+        "sha256": "2ee77f8b9c249a91d1aa6b8303ceb8a9060de2b6e987873a7efb83b00f8f89a4",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "source_path": "validation_wam_20261007/official_results/inputs/hubble.png"
+      },
+      {
+        "image_index": 5,
+        "name": "immunohistochemistry",
+        "file": "team10/immunohistochemistry.png",
+        "sha256": "b645cc116f07584440e6317a667259653e17db6524d9fedde6f519b23c1855da",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "source_path": "validation_wam_20261007/official_results/inputs/immunohistochemistry.png"
+      },
+      {
+        "image_index": 6,
+        "name": "retina",
+        "file": "team10/retina.png",
+        "sha256": "b6ecc53b5bf8f5fddd27d255fbd6eb9072c29d32807594a8076daa2cb0d2436a",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "source_path": "validation_wam_20261007/official_results/inputs/retina.png"
+      },
+      {
+        "image_index": 7,
+        "name": "motorcycle",
+        "file": "team10/motorcycle.png",
+        "sha256": "82188cea87afaccb1699692665cc3bc3c10e006dd2bde7edcef2bab78777cb51",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "source_path": "validation_wam_20261007/official_results/inputs/motorcycle.png"
+      },
+      {
+        "image_index": 8,
+        "name": "camera",
+        "file": "team10/camera.png",
+        "sha256": "ce32863dbdf226d611dc979713791281e23d22dedf25aae72729837345ba693c",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "source_path": "validation_wam_20261007/official_results/inputs/camera.png"
+      },
+      {
+        "image_index": 9,
+        "name": "coins",
+        "file": "team10/coins.png",
+        "sha256": "d76a49f4e792de5f43d35653af72bf50011deac555081b73ce82662781c9e0f8",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "source_path": "validation_wam_20261007/official_results/inputs/coins.png"
+      }
+    ],
+    "preprocessing": "byte-identical copies of committed RGB 512x512 PNGs; no new resize/crop"
+  },
+  "source_hashes": {
+    "baselines/run_pipeline_eval.py": "5cd48f66f7e4cfc85e30e97259ec3be4cade0d59c7f60985e0267749d90f63aa",
+    "baselines/shared_protocol.py": "5420c0b8dbd9c93339694595cdcb177df0110fc06c941e989e7f1de4ae1ee601",
+    "baselines/svd/prepare_data.py": "17cac820e8d6c7dfce53b9097ac22fc39369977b9db32cbcb76a6b3e91255d3b",
+    "baselines/svd/watermark.py": "e840ca5d6b5925369907eee8a2d873604aa161e8c68a1bb79a65034e157b6b8d",
+    "baselines/svd/protocol.py": "ecec24dd8cc0d5651728e96260ebccb0fca6d62fcd32c02fa17e30366207b210",
+    "baselines/svd/rgb_adapter.py": "88c36e01a7ef4c787260c7fcf440ff58e07dd4bd2c4ed97668d0561cf249ef8c",
+    "baselines/svd/cli.py": "5e4cceb377df417c36a472e74ea31d1bc293051c7c83ea1e2f483259fc1b8253",
+    "baselines/svd/run_team10.py": "e27f19831321d24fab3a3a8f9296ee1cafcb571c8003a7e0e732f16f1b90ba97",
+    "baselines/svd/configs/team32.json": "872d3d0ed0377a66210b7a6a09a9236c3565d85e02da3347309ee5d42bfda742"
+  },
+  "python": "3.11.18",
+  "numpy": "2.4.6",
+  "Pillow": "13.0.0",
+  "quality": "RGB after PNG roundtrip; shared uniform7 SSIM/sample covariance",
+  "ber": "effective32-bit decoded messages only; no-output counts separately",
+  "limitations": [
+    "not matched distortion or redundancy budget",
+    "no calibrated watermark-presence test for traditional methods",
+    "not interchangeable with historical float-clean WAM results"
+  ],
+  "finished": true
+}
