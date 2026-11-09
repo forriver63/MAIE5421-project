@@ -18,9 +18,9 @@ def sha256(path):
 
 def prepare(reference=None):
     reference = Path(reference) if reference else ROOT.parents[1]
-    # Branch commits may advance: pin data content, not the developer's HEAD.
-    commit = TEAM_COMMIT
-    subprocess.check_call(['git', '-C', str(reference), 'cat-file', '-e', commit+'^{commit}'])
+    commit = subprocess.check_output(['git', '-C', str(reference), 'rev-parse', 'HEAD'], text=True).strip()
+    if commit != TEAM_COMMIT:
+        raise RuntimeError(f'Expected reference {TEAM_COMMIT}; found {commit}. Review protocol before updating.')
     src = reference/'validation_wam_20261007/official_results/inputs'
     destination = ROOT/'data/team10'
     destination.mkdir(parents=True, exist_ok=True)
@@ -31,10 +31,6 @@ def prepare(reference=None):
             if im.size != (512, 512) or im.mode != 'RGB':
                 raise ValueError(f'Unexpected input: {name} {im.size} {im.mode}')
         digest = sha256(source)
-        pinned = subprocess.check_output(['git', '-C', str(reference), 'show',
-                                          commit+':'+str(source.relative_to(reference))])
-        if hashlib.sha256(pinned).hexdigest() != digest:
-            raise RuntimeError(f'Source differs from pinned dataset: {source}')
         if target.exists():
             if sha256(target) != digest:
                 raise RuntimeError(f'Refusing to overwrite modified input {target}')

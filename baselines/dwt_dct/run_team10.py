@@ -69,7 +69,7 @@ def main():
         'status': 'development screening, not paper-table or matched-quality WAM comparison',
         'team_commit': TEAM_COMMIT, 'config': asdict(cfg), 'payload_bits': 32,
         'embedded_bit_instances': 32*cfg.repetitions, 'images': 10, 'payload_seeds': [0,1,2],
-        'protocol_id': 'rgb_png32_v1', 'shared_protocol_sha256': sha256(ROOT.parent/'shared_protocol.py'), 'source_sha256': source_hashes, 'dataset': manifest,
+        'source_sha256': source_hashes, 'dataset': manifest,
         'versions': {'python': platform.python_version(), 'numpy': np.__version__, 'Pillow': pillow_version},
         'clean_policy': 'all measured attacks start from saved/reloaded 8-bit PNG; clipped float clean is diagnostic only',
         'ssim_settings': 'RGB, uniform7x7, sample covariance, K1=.01,K2=.03,range255,valid interior; NumPy implementation',
@@ -142,7 +142,7 @@ def main():
                 bit_image(truth).save(samples/'bits_original.png')
             write_csv(out/'cases.csv', cases)
             write_csv(out/'quality.csv', qualities)
-        clean = [r for r in cases if r['image'] == name and r['condition'] == 'clean']
+        clean = [r for r in cases if r['image'] == name and r['condition'] == 'clean_png']
         print(f"{name:24s} clean exact={sum(r['global_exact'] for r in clean)}/3", flush=True)
     summary = []
     for condition, rows in by_condition.items():
