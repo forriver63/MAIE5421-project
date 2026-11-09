@@ -28,11 +28,11 @@ class SynchronizationError(ValueError):
     pass
 
 
-def plane(image):
+def plane(image, allow_out_of_range=False):
     a = np.asarray(image, dtype=np.float64)
     if a.ndim != 3 or a.shape[2] != 3 or a.size == 0:
         raise ValueError('Expected HxWx3 RGB')
-    if not np.isfinite(a).all() or (a < 0).any() or (a > 255).any():
+    if not np.isfinite(a).all() or (not allow_out_of_range and ((a < 0).any() or (a > 255).any())):
         raise ValueError('Expected finite 0..255 RGB values')
     return a, a @ np.array([.299, .587, .114])
 
@@ -71,14 +71,14 @@ def embed(image, payload_bits, config=None):
     return marked, settings, diagnostic
 
 
-def extract(image, settings):
+def extract(image, settings, *, allow_out_of_range=False):
     if settings.get('method') != 'zhang2017_rgb32_eq10_v1':
         raise ValueError('Incompatible extraction settings')
     if list(np.shape(image)) != settings['image_shape']:
         raise SynchronizationError('Image size changed; blind crop synchronization is not implemented')
     cfg = Config(**settings['config'])
     cfg.validate()
-    _, y = plane(image)
+    _, y = plane(image, allow_out_of_range=allow_out_of_range)
     blocks = to_blocks(y, cfg.block_size)
     positions = np.asarray(settings['positions'], dtype=int)
     if (positions.ndim != 1 or len(positions) != settings['payload_length'] or

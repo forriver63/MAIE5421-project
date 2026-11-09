@@ -116,9 +116,9 @@ def block_positions(capacity, bits, repetitions):
     return np.floor((np.arange(used)+0.5)*capacity/used).astype(int)
 
 
-def image_plane(image, mode):
+def image_plane(image, mode, allow_out_of_range=False):
     a = np.asarray(image, dtype=np.float64)
-    if a.size == 0 or not np.isfinite(a).all() or (a < 0).any() or (a > 255).any():
+    if a.size == 0 or not np.isfinite(a).all() or (not allow_out_of_range and ((a < 0).any() or (a > 255).any())):
         raise ValueError('Image must contain finite values in 0..255')
     if mode == 'gray' and a.ndim == 2:
         return a, a
@@ -178,7 +178,7 @@ def embed(image, payload_bits, config=None):
     return marked, settings, diagnostic
 
 
-def extract(image, settings):
+def extract(image, settings, *, allow_out_of_range=False):
     """Blind message decoding: only received image and agreed settings."""
     if settings.get('method') != 'alhaj2007_haar_dct4_v1':
         raise ValueError('Unknown method/settings version')
@@ -188,7 +188,7 @@ def extract(image, settings):
         raise ValueError('Incompatible mid-band settings')
     cfg = Config(**settings['config'])
     cfg.validate()
-    _, plane = image_plane(image, cfg.color_mode)
+    _, plane = image_plane(image, cfg.color_mode, allow_out_of_range=allow_out_of_range)
     _, _, coefficients, _ = analyze_plane(plane, cfg.subband)
     n = settings['payload_length']
     positions = block_positions(len(coefficients), n, cfg.repetitions)

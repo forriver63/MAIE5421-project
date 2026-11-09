@@ -12,12 +12,16 @@ import json
 from pathlib import Path
 import platform
 import time
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from mainline_float import tensors, quality, variants, decode_array
 
 import numpy as np
 from PIL import Image, __version__ as pillow_version
 
 from prepare_data import ROOT, prepare, sha256
-from protocol import TEAM_COMMIT, attacks, message_metrics, quality, source_bits, source_bytes
+from protocol import TEAM_COMMIT, message_metrics, source_bits, source_bytes
 from rgb_adapter import Config, SynchronizationError, embed, extract, to_uint8
 
 
@@ -69,14 +73,11 @@ def main():
         'embedded_bit_instances': 32*1, 'images': 10, 'payload_seeds': [0,1,2],
         'source_sha256': source_hashes, 'dataset': manifest,
         'versions': {'python': platform.python_version(), 'numpy': np.__version__, 'Pillow': pillow_version},
-        'clean_policy': 'all measured attacks start from saved/reloaded 8-bit PNG; clipped float clean is diagnostic only',
-        'ssim_settings': 'RGB, uniform7x7, sample covariance, K1=.01,K2=.03,range255,valid interior; NumPy implementation',
+        'clean_policy': 'mainline normalized float tensor; PNG preview only',
+        'ssim_settings': 'watermarking.metrics.quality',
         'ber_policy': 'effective32-bit BER on decoded cases; denominator and extraction failures reported separately',
         'geometry_policy': 'rotation decoded without angle; changed dimensions rejected; no oracle crop alignment',
-        'differences_from_team_historical': ['PNG round trip for all attacks vs float clean/tensor source',
-                                           'NumPy float64 vs torch float32 normalization',
-                                           'Pillow/NumPy versions recorded, not historical pins',
-                                           'no WAM localization/packet metrics or calibrated presence detection', 'SVD requires image-dependent selected block positions as side information'],
+        'differences_from_team_historical': ['no WAM localization/packet metrics or calibrated presence detection', 'SVD requires image-dependent selected block positions as side information'],
         'finished': False,
     }
     write_json(out/'run.json', run_metadata)
@@ -94,24 +95,26 @@ def main():
             start = time.perf_counter()
             floating, settings, diagnostic = embed(image, truth, cfg)
             embed_seconds = time.perf_counter()-start
-            float_bits, _ = extract(np.clip(floating, 0, 255), settings)
+            original_tensor, marked_tensor = tensors(image, floating)
+            float_bits, _ = extract(decode_array(marked_tensor), settings, allow_out_of_range=True)
+            psnr, ssim = quality(original_tensor, marked_tensor)
             Image.fromarray(to_uint8(floating)).save(case_dir/'marked.png')
             write_json(case_dir/'settings.json', settings)
-            with Image.open(case_dir/'marked.png') as im:
-                saved = np.array(im)
+            saved = to_uint8(floating)
             disk_settings = json.loads((case_dir/'settings.json').read_text())
             quality_row = {'case_id': case_id, 'image': name, 'payload_seed': seed,
-                           'payload_hex': payload_hex, **quality(image, saved),
+                           'payload_hex': payload_hex, 'psnr_db': psnr, 'ssim': ssim,
                            'float_clean_bit_errors': int(np.count_nonzero(float_bits != truth)),
                            'embed_seconds': embed_seconds, **diagnostic}
             qualities.append(quality_row)
             # Truth is stored in evaluation records only, never in extraction settings.
             write_json(case_dir/'evaluation_truth.json', {'payload_hex': payload_hex,
                                                          'bits': truth.tolist()})
-            for condition, attacked, params in attacks(saved, i, seed):
+            for condition, attacked, params in variants(marked_tensor, i, seed):
+                attacked = decode_array(attacked)
                 start = time.perf_counter()
                 try:
-                    recovered, info = extract(attacked, disk_settings)
+                    recovered, info = extract(attacked, disk_settings, allow_out_of_range=True)
                     status, reason = 'decoded', ''
                 except SynchronizationError as error:
                     recovered, info = None, {}
@@ -131,7 +134,7 @@ def main():
                 if i == 0 and seed == 0:
                     samples = out/'example_astronaut'
                     samples.mkdir(exist_ok=True)
-                    Image.fromarray(attacked).save(samples/f'{condition}.png')
+                    Image.fromarray(to_uint8(attacked)).save(samples/f'{condition}.png')
                     if recovered is not None:
                         bit_image(recovered).save(samples/f'bits_{condition}.png')
             if i == 0 and seed == 0:
@@ -140,7 +143,7 @@ def main():
                 bit_image(truth).save(samples/'bits_original.png')
             write_csv(out/'cases.csv', cases)
             write_csv(out/'quality.csv', qualities)
-        clean = [r for r in cases if r['image'] == name and r['condition'] == 'clean_png']
+        clean = [r for r in cases if r['image'] == name and r['condition'] == 'clean']
         print(f"{name:24s} clean exact={sum(r['global_exact'] for r in clean)}/3", flush=True)
     summary = []
     for condition, rows in by_condition.items():
