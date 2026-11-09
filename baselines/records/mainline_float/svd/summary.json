@@ -1,0 +1,162 @@
+{
+  "conditions": [
+    {
+      "condition": "clean",
+      "cases": 30,
+      "exact_cases": 30,
+      "exact_recovery_rate": 1.0,
+      "decoded_cases": 30,
+      "extraction_failures": 0,
+      "bit_errors_decoded": 0,
+      "ber_denominator_bits": 960,
+      "payload_ber_decoded": 0.0
+    },
+    {
+      "condition": "jpeg75",
+      "cases": 30,
+      "exact_cases": 6,
+      "exact_recovery_rate": 0.2,
+      "decoded_cases": 30,
+      "extraction_failures": 0,
+      "bit_errors_decoded": 165,
+      "ber_denominator_bits": 960,
+      "payload_ber_decoded": 0.171875
+    },
+    {
+      "condition": "jpeg50",
+      "cases": 30,
+      "exact_cases": 0,
+      "exact_recovery_rate": 0.0,
+      "decoded_cases": 30,
+      "extraction_failures": 0,
+      "bit_errors_decoded": 285,
+      "ber_denominator_bits": 960,
+      "payload_ber_decoded": 0.296875
+    },
+    {
+      "condition": "noise2",
+      "cases": 30,
+      "exact_cases": 20,
+      "exact_recovery_rate": 0.6666666666666666,
+      "decoded_cases": 30,
+      "extraction_failures": 0,
+      "bit_errors_decoded": 63,
+      "ber_denominator_bits": 960,
+      "payload_ber_decoded": 0.065625
+    },
+    {
+      "condition": "noise5",
+      "cases": 30,
+      "exact_cases": 0,
+      "exact_recovery_rate": 0.0,
+      "decoded_cases": 30,
+      "extraction_failures": 0,
+      "bit_errors_decoded": 199,
+      "ber_denominator_bits": 960,
+      "payload_ber_decoded": 0.20729166666666668
+    },
+    {
+      "condition": "rotate-10",
+      "cases": 30,
+      "exact_cases": 0,
+      "exact_recovery_rate": 0.0,
+      "decoded_cases": 30,
+      "extraction_failures": 0,
+      "bit_errors_decoded": 491,
+      "ber_denominator_bits": 960,
+      "payload_ber_decoded": 0.5114583333333333
+    },
+    {
+      "condition": "rotate-5",
+      "cases": 30,
+      "exact_cases": 0,
+      "exact_recovery_rate": 0.0,
+      "decoded_cases": 30,
+      "extraction_failures": 0,
+      "bit_errors_decoded": 493,
+      "ber_denominator_bits": 960,
+      "payload_ber_decoded": 0.5135416666666667
+    },
+    {
+      "condition": "rotate-2",
+      "cases": 30,
+      "exact_cases": 0,
+      "exact_recovery_rate": 0.0,
+      "decoded_cases": 30,
+      "extraction_failures": 0,
+      "bit_errors_decoded": 491,
+      "ber_denominator_bits": 960,
+      "payload_ber_decoded": 0.5114583333333333
+    },
+    {
+      "condition": "rotate-1",
+      "cases": 30,
+      "exact_cases": 0,
+      "exact_recovery_rate": 0.0,
+      "decoded_cases": 30,
+      "extraction_failures": 0,
+      "bit_errors_decoded": 489,
+      "ber_denominator_bits": 960,
+      "payload_ber_decoded": 0.509375
+    },
+    {
+      "condition": "rotate+1",
+      "cases": 30,
+      "exact_cases": 0,
+      "exact_recovery_rate": 0.0,
+      "decoded_cases": 30,
+      "extraction_failures": 0,
+      "bit_errors_decoded": 496,
+      "ber_denominator_bits": 960,
+      "payload_ber_decoded": 0.5166666666666667
+    },
+    {
+      "condition": "rotate+2",
+      "cases": 30,
+      "exact_cases": 0,
+      "exact_recovery_rate": 0.0,
+      "decoded_cases": 30,
+      "extraction_failures": 0,
+      "bit_errors_decoded": 475,
+      "ber_denominator_bits": 960,
+      "payload_ber_decoded": 0.4947916666666667
+    },
+    {
+      "condition": "rotate+5",
+      "cases": 30,
+      "exact_cases": 0,
+      "exact_recovery_rate": 0.0,
+      "decoded_cases": 30,
+      "extraction_failures": 0,
+      "bit_errors_decoded": 482,
+      "ber_denominator_bits": 960,
+      "payload_ber_decoded": 0.5020833333333333
+    },
+    {
+      "condition": "rotate+10",
+      "cases": 30,
+      "exact_cases": 0,
+      "exact_recovery_rate": 0.0,
+      "decoded_cases": 30,
+      "extraction_failures": 0,
+      "bit_errors_decoded": 488,
+      "ber_denominator_bits": 960,
+      "payload_ber_decoded": 0.5083333333333333
+    },
+    {
+      "condition": "crop75_jpeg75",
+      "cases": 30,
+      "exact_cases": 0,
+      "exact_recovery_rate": 0.0,
+      "decoded_cases": 0,
+      "extraction_failures": 30,
+      "bit_errors_decoded": 0,
+      "ber_denominator_bits": 0,
+      "payload_ber_decoded": null
+    }
+  ],
+  "mean_psnr_db": 71.36861307876953,
+  "mean_ssim": 0.9999781409899394,
+  "float_clean_exact_cases": 30,
+  "total_cases": 420
+}
