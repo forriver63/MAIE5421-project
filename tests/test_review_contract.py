@@ -91,3 +91,21 @@ def test_validator_resolves_relative_processed_image(tmp_path, fixture_run):
     records[0]['processed'] = 'image.bin'
     write_json(manifest, records)
     assert validate_run(fixture_run.parent)['missing'] == 0
+
+
+def test_replay_accepts_distinct_platform_neutral_directory(tmp_path):
+    from watermarking.bench.replay import replay
+    source = tmp_path / 'source'
+    source.mkdir()
+    destination = tmp_path / 'output'
+    replay(source, destination)
+    assert read_json(destination / 'replay_provenance.json')['model_inference_calls'] == 0
+
+
+@pytest.mark.parametrize('layout', ['same', 'child', 'parent'])
+def test_replay_rejects_overlapping_output(tmp_path, layout):
+    from watermarking.bench.replay import replay
+    source = tmp_path / 'source'
+    target = {'same': source, 'child': source / 'output', 'parent': tmp_path}[layout]
+    with pytest.raises(ValueError, match='overlap'):
+        replay(source, target)

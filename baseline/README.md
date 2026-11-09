@@ -6,7 +6,7 @@ Read [REPORT_EN.html](REPORT_EN.html) for the current results and limitations, [
 
 ## Setup and inputs
 
-Use Python 3.10 and the project's pinned dependencies. The published benchmark used CPU PyTorch 2.5.1, not model training. Set `WM_ROOT` to an absolute local asset directory and `WAM_PATH` to its `third_party/watermark-anything` checkout. Choose storage locations appropriate for your machine. The author's Windows launch script separately enforces the local storage policy; the shared library is platform-independent.
+Use Python 3.10 and the project's pinned dependencies. The published benchmark used CPU PyTorch 2.5.1, not model training. Set `WM_ROOT` to an absolute local asset directory and `WAM_PATH` to its `third_party/watermark-anything` checkout. Choose storage locations appropriate for your machine.
 
 1. Install this repository with `python -m pip install -e '.[dev]'` inside your environment. No administrator or user-site install is needed.
 2. Clone `https://github.com/facebookresearch/watermark-anything.git` under `$WM_ROOT/third_party/watermark-anything`, and check out `2c08af04d037d5667c02f6ddebbda9ff04581c3e`. Set `WAM_PATH` accordingly. Obtain `checkpoints/wam_mit.pth` from `https://dl.fbaipublicfiles.com/watermark_anything/wam_mit.pth`; retain upstream `checkpoints/params.json`. Expected weight SHA-256: `90ef232384e023bd63245eb0c131abd69d2afc7b8f17a71ccedceb542bf009e2`.
@@ -50,7 +50,7 @@ Each supplied directory must contain all 8,400 positives and 100 negatives. For 
 
 ## Interpretation and attribution
 
-Exact/wrong/erasure are mutually exclusive; Marker rejection or incomplete packet reconstruction counts as erasure. Raw BER ignores acceptance. Carrier BER for Full/E1 is conditional on localized regions and has a different denominator, so it cannot be ranked against global-message BER.
+Exact/wrong/erasure are mutually exclusive; marker rejection or incomplete packet reconstruction counts as erasure. Raw BER ignores acceptance. Carrier BER for Full/E1 is conditional on localized regions and has a different denominator, so it cannot be ranked against global-message BER.
 
 HiDDeN: Zhu et al., *HiDDeN: Hiding Data With Deep Networks*, ECCV 2018. We use Meta's later JND implementation, not the original authors' 2018 weights. References: https://github.com/facebookresearch/omnisealbench and https://github.com/facebookresearch/stable_signature. Preserve upstream attribution and noncommercial restrictions; no weight redistribution is included here. WAM source and checkpoint retain their upstream terms. DIV2K images are not included.
 

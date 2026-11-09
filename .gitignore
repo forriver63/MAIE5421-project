@@ -85,3 +85,4 @@ experiments/*/figures/
 /evidence/
 /provenance/
 /source_snapshots/
+/configs/*.local.json

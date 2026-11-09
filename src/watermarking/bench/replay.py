@@ -13,8 +13,8 @@ from .scoring import score_payload, score_regions
 
 def replay(source, destination):
     source, destination = Path(source).resolve(), Path(destination).resolve()
-    if source == destination or destination.drive.lower() != 'd:':
-        raise ValueError('Replay requires a distinct D-drive output directory')
+    if source == destination or source in destination.parents or destination in source.parents:
+        raise ValueError('Replay source and output directories must not overlap')
     oracle = make_masks(8, torch.device('cpu'))[:, 0].numpy().astype(bool)
     version = code_digest()
     count = 0
