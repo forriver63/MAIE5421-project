@@ -14,3 +14,7 @@ RGB pixels are ImageNet-normalized, message bits use -1/+1, and decoder logits u
 Before observing smoke results, the expansion rule was fixed: at strength 0.45, clean raw BER below 1%, or JPEG75 raw BER improvement of at least 2 percentage points. The 20-image calibration smoke did not meet either condition: clean BER 2.19% → 8.75%; JPEG75 12.66% → 12.19%. Therefore no 8,400-case resize256 test was selected. This limited check does not prove equivalence of all resolution protocols or all checkpoints.
 
 The original strength 0.30, default 0.45 and calibration PSNR-nearest 0.3615234375 formal results are all retained. Closer PSNR does not mean matched SSIM. See `results/` and [the shared instructions](../README.md).
+
+## Shared team table
+
+The original100-image study above is preserved. See [team10](../team10/README.md) for the separate10-image bridge, including payload-only and marker-gated scores.

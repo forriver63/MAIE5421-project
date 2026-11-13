@@ -1,4 +1,9 @@
-# Unified system comparison
+# Baseline experiments
+
+- **Team comparison table:** [10-image,14-condition comparison of four learning-based methods](team10/README.md). Use this for merging with teammate tables.
+- **Extended HiDDeN study:** the existing files below retain the100-image study and strength/resolution checks. Its scores are not interchangeable with the team10 scores.
+
+## Extended100-image system comparison
 
 This benchmark compares complete 32-bit message recovery under identical images, messages and attacks. Systems have different logical embedding budgets: Full uses eight 32-bit regional carriers (256 bits), HiDDeN uses 48 bits (16 marker + 32 payload). These are system comparisons; they do not isolate neural backbone quality or coding gains.
 
@@ -54,7 +59,7 @@ Exact/wrong/erasure are mutually exclusive; marker rejection or incomplete packe
 
 HiDDeN: Zhu et al., *HiDDeN: Hiding Data With Deep Networks*, ECCV 2018. We use Meta's later JND implementation, not the original authors' 2018 weights. References: https://github.com/facebookresearch/omnisealbench and https://github.com/facebookresearch/stable_signature. Preserve upstream attribution and noncommercial restrictions; no weight redistribution is included here. WAM source and checkpoint retain their upstream terms. DIV2K images are not included.
 
-Additional teammate baselines should use this image manifest, payload generator, PNG quantization, attack plans and scoring definitions. Record native/effective payload budgets, detection rules, quality and calibration choices; shared attack names alone do not make independently produced scores comparable.
+For the extended100-image study, additional baselines would need this image manifest, payload generator, PNG quantization, attack plans and scoring definitions. The existing teammate10-image experiment instead uses [team10](team10/README.md). Record native/effective payload budgets, detection rules, quality and calibration choices; shared attack names alone do not make independently produced scores comparable.
 
 ## Regenerate the published presentation
 

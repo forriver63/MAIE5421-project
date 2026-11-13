@@ -1,0 +1,7 @@
+{
+  "models/hidden/decoder_48b.torchscript.pt": "d6f0c052efb0a26869322ee657d9982bba79b32c2e0305fd4339aff45b58ac49",
+  "models/hidden/encoder_with_jnd_48b.torchscript.pt": "4722388872e8ec7cbc3084806546d852b982cc1ed01245d8dc039dd748af3071",
+  "third_party/redmark/logs/MT-Net/Weights/weights_final.h5": "83cb8885a8974b775d6054ef3a743d8e368f8bad4c2a9ea7557f4abb659864fd",
+  "third_party/rosteals_author_demo/models/epoch=000017-step=000449999.ckpt": "aca34dc7770f620531173f5e49e92ec9d6e580e28c0132d8e1056bb61dc1f614",
+  "models/sepmark/EC_90.pth": "e68c51892d89cad7db525645f9f16082378b55869154d7e94456aaf6344126e0"
+}
