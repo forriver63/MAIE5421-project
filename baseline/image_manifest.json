@@ -1,0 +1,1802 @@
+[
+  {
+    "image_id": "DIV2K_0001",
+    "processed": "processed/DIV2K_0001.png",
+    "processed_sha256": "6f797b11ac956530d15bf3cae8c236865b5b0a7c0be4b14ed9ef8e9358252241",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_train_HR/0001.png",
+    "source_sha256": "cdb20d7a462744c269d8e197f735c7bc42e7cda367a940a9b7bc27803b1c8619",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip",
+    "split": "calibration"
+  },
+  {
+    "image_id": "DIV2K_0002",
+    "processed": "processed/DIV2K_0002.png",
+    "processed_sha256": "da137d77664c532f4140e02bcafce4600cd619d68216af376d8116d18be8aab0",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_train_HR/0002.png",
+    "source_sha256": "82325cea74c2cd4681f69a10e36ba15c896d99ec47dc2c687ef07f7497781e09",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip",
+    "split": "calibration"
+  },
+  {
+    "image_id": "DIV2K_0003",
+    "processed": "processed/DIV2K_0003.png",
+    "processed_sha256": "a21785b5a4abd9b9685352f4886aec02859516f3487b80500bb544b5592a3f69",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_train_HR/0003.png",
+    "source_sha256": "ca9df4e0b258dee3ca63182e7204096818356a63e44f7c6eb3a632ca91516eb3",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip",
+    "split": "calibration"
+  },
+  {
+    "image_id": "DIV2K_0004",
+    "processed": "processed/DIV2K_0004.png",
+    "processed_sha256": "42445b583d958b1896bd24f7473980bbb52cc7fd88413cac9f582f6899222322",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_train_HR/0004.png",
+    "source_sha256": "6675cdedc1665477fd40ea026080083244aab895012e2571383661c1d5614776",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip",
+    "split": "calibration"
+  },
+  {
+    "image_id": "DIV2K_0005",
+    "processed": "processed/DIV2K_0005.png",
+    "processed_sha256": "a1de628668f9a1db2f1b227c906b8babfb2e6bad2880e38138efab60a11d87a4",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_train_HR/0005.png",
+    "source_sha256": "480d3a479aa5e317b070a952a75162974622ee7c2518fbf6327432151cbc3fba",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip",
+    "split": "calibration"
+  },
+  {
+    "image_id": "DIV2K_0006",
+    "processed": "processed/DIV2K_0006.png",
+    "processed_sha256": "e017d5210ce669ed3ec149fea2c4af78cd83ae315e2eb1473fda66a2db2c58ad",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_train_HR/0006.png",
+    "source_sha256": "bb01a167662a12c570d36f7653798bde06d6ff09f713519dd24309e1e6dffbba",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip",
+    "split": "calibration"
+  },
+  {
+    "image_id": "DIV2K_0007",
+    "processed": "processed/DIV2K_0007.png",
+    "processed_sha256": "735cb3f095e31fad04d12b95f32e2a685edb851a42b96989553cfdd7f7e8153d",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_train_HR/0007.png",
+    "source_sha256": "5e9400ebfa394ed8966437bf83e12cf56f04c41cadd2a00820b51746c04551cd",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip",
+    "split": "calibration"
+  },
+  {
+    "image_id": "DIV2K_0008",
+    "processed": "processed/DIV2K_0008.png",
+    "processed_sha256": "3306288a5ed17a9633437681c3f0350f79641db9bea542f25f7f15cddf44ca4b",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_train_HR/0008.png",
+    "source_sha256": "d3ca47ccccac86959e75065205e6fa084c9479adf31901d52c39d7be8ae8377f",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip",
+    "split": "calibration"
+  },
+  {
+    "image_id": "DIV2K_0009",
+    "processed": "processed/DIV2K_0009.png",
+    "processed_sha256": "1a8f0186558cefaf72cf07fdb7068eae34ed9abbf4cfaf5dc532cd5afc694e00",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_train_HR/0009.png",
+    "source_sha256": "8a508c3fbe3731e947e9a7decf629b0accf052f266962389221f1aeb2148bafc",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip",
+    "split": "calibration"
+  },
+  {
+    "image_id": "DIV2K_0010",
+    "processed": "processed/DIV2K_0010.png",
+    "processed_sha256": "fde2be6438fc51608d9a9bdb49c89328214bc71000fd20f124da4377934be8d6",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_train_HR/0010.png",
+    "source_sha256": "d916c83a32aeb5a812fb20f2b36c3b7395a39fac66d99b2637cf157cf4bf2687",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip",
+    "split": "calibration"
+  },
+  {
+    "image_id": "DIV2K_0011",
+    "processed": "processed/DIV2K_0011.png",
+    "processed_sha256": "07789109c85a8bbe36f132e97cc86a11ee49bef85c5452ce53167c474ea1ae89",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_train_HR/0011.png",
+    "source_sha256": "eb4e0dc6828755dcd0a8977f7d84d128de00da6415456702442ba187a2d74c11",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip",
+    "split": "calibration"
+  },
+  {
+    "image_id": "DIV2K_0012",
+    "processed": "processed/DIV2K_0012.png",
+    "processed_sha256": "9938a565c96cf5236d0584425b9facdfd0200d9553b5f058355e52dfd0b0f3f8",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_train_HR/0012.png",
+    "source_sha256": "33617d0cda2dfc91890d13462e70c4a57b495db1391a3d1930213aadbd9ad955",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip",
+    "split": "calibration"
+  },
+  {
+    "image_id": "DIV2K_0013",
+    "processed": "processed/DIV2K_0013.png",
+    "processed_sha256": "15453e624c1120b129eecc0f4203ff49bab3c2971dc2c604a177f07d4ca178ad",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_train_HR/0013.png",
+    "source_sha256": "64158f359000e81c3e19bc8a43632ee40ef9b400768322ff21046f51c59ae2dc",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip",
+    "split": "calibration"
+  },
+  {
+    "image_id": "DIV2K_0014",
+    "processed": "processed/DIV2K_0014.png",
+    "processed_sha256": "de85737935aa21a838ed85c768dc06cf0e2d5234693b0b9f5a3aea0a0d481c6d",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_train_HR/0014.png",
+    "source_sha256": "889f6c91540d49632e3d55fadeced0d8afb05d8c352fbf78b86461826eb31cd1",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip",
+    "split": "calibration"
+  },
+  {
+    "image_id": "DIV2K_0015",
+    "processed": "processed/DIV2K_0015.png",
+    "processed_sha256": "4e2cc7261b09aa95d40ec05eb4c8cbf750d56160133829c11ccaa3100d91c16c",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_train_HR/0015.png",
+    "source_sha256": "269800f7a5bf449ac260560b29bb9997c99b97db205509af6a0245421d5b2d70",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip",
+    "split": "calibration"
+  },
+  {
+    "image_id": "DIV2K_0016",
+    "processed": "processed/DIV2K_0016.png",
+    "processed_sha256": "ffd3da8f2a63da4b56d28b0a15ab2fd7829c58eba1c3ba821693df6606176bb9",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_train_HR/0016.png",
+    "source_sha256": "d9863e6c6f0ffad885d0a6085865dd90f272a278e2681f03dc410a488e227cd3",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip",
+    "split": "calibration"
+  },
+  {
+    "image_id": "DIV2K_0017",
+    "processed": "processed/DIV2K_0017.png",
+    "processed_sha256": "9c1d4c6a451abbf454861c794f5731825d920f3827b67e610c6a3f2ec6361249",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_train_HR/0017.png",
+    "source_sha256": "ef5e86d335c807fcaa696bc4616ec052d5df5eda81ca9af3dd5bb550c3c66dd9",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip",
+    "split": "calibration"
+  },
+  {
+    "image_id": "DIV2K_0018",
+    "processed": "processed/DIV2K_0018.png",
+    "processed_sha256": "c43b50a3d4d416113556f5cb2fe0919062e2dc71b93ac8e50e3a8d3e94c68384",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_train_HR/0018.png",
+    "source_sha256": "ed54c64959e8fc7c0db11b2b355909eebc83d5d0786dc6c25fe46edd5e2071cd",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip",
+    "split": "calibration"
+  },
+  {
+    "image_id": "DIV2K_0019",
+    "processed": "processed/DIV2K_0019.png",
+    "processed_sha256": "2675ec96fb608ccab07f390e928d669f748a8cb56adc5785188bb0feb2233a5f",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_train_HR/0019.png",
+    "source_sha256": "ffe28d0e27ae27ba533c54cafc7ff555066ccfe770d0fee7d2299e0c10be6668",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip",
+    "split": "calibration"
+  },
+  {
+    "image_id": "DIV2K_0020",
+    "processed": "processed/DIV2K_0020.png",
+    "processed_sha256": "e83b4d1a10e1d1640e610c814faec1af41b24aa8106b72d2529af0814108837c",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_train_HR/0020.png",
+    "source_sha256": "dd0eca7b184c42e1d4cf92cd252af9a47eb1d099f0637844ed658929f2712b0b",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_train_HR.zip",
+    "split": "calibration"
+  },
+  {
+    "image_id": "DIV2K_0801",
+    "processed": "processed/DIV2K_0801.png",
+    "processed_sha256": "77951eb80f296dcb202bbbdd9faf6d3322bc3d585553b0e88ff3d094863f362f",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0801.png",
+    "source_sha256": "ab5cf6a1cac2d1c2d0792dbd274fd2e53e42118ab6537771a825fd87aa28a60c",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0802",
+    "processed": "processed/DIV2K_0802.png",
+    "processed_sha256": "e1a14e0d18c7d617de30037f1d2d83c4e8f77f685367a201aae74d97e513a017",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0802.png",
+    "source_sha256": "4ad6f3ca8bf740192042978121f05ec493ddbe5a3da5584eaf0d9699c25ee431",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0803",
+    "processed": "processed/DIV2K_0803.png",
+    "processed_sha256": "66dcbf4ce6f9cc112d192653944d1cd06a57807e149c44d01093d98429267032",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0803.png",
+    "source_sha256": "4b0148a9a1ff877ad9f76e65736a50cc36e10822b5d8ccd2abb2988ff4e1782b",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0804",
+    "processed": "processed/DIV2K_0804.png",
+    "processed_sha256": "5af9b6cbccb1735c88e9baacc3b8dea24ff5bdccd4d8dea2c3664d7e55469e06",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0804.png",
+    "source_sha256": "16b5fdbe808b868bed0be32f235208a1716d44e271a37b79cbc77ab53d2f6bdb",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0805",
+    "processed": "processed/DIV2K_0805.png",
+    "processed_sha256": "1cf669e7c31e63f88bdff1f8cd5e92f1d4c9eb2bff9d2fe7fa17938b0cc40df0",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0805.png",
+    "source_sha256": "e28d56feee10c2e2663f347dda574fff736894dba37341d37b91bac2ecd863b2",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0806",
+    "processed": "processed/DIV2K_0806.png",
+    "processed_sha256": "a0e36a0ff54f9822da80b4ab0e2184ca1829b2368edde96fa9b648ecaa9f1f93",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0806.png",
+    "source_sha256": "36720ddd59f8b3eed28f8981e12e6e2d680bfa78b9d25f33ec4152013652c713",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0807",
+    "processed": "processed/DIV2K_0807.png",
+    "processed_sha256": "26b1e8d63315bd0e78c7beb91ba4bd4d87dd941c2adfb4aa1658c0de127b9c2a",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0807.png",
+    "source_sha256": "4a2493d918862f703f783dc675bacbae5bd7698aa58f81ddb8bb71cf39ac173a",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0808",
+    "processed": "processed/DIV2K_0808.png",
+    "processed_sha256": "c4338a43b73388e316f63f294ff47758ea4f901aa25fab893825cf06f90d71ce",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0808.png",
+    "source_sha256": "956528ab3e0fadad1ed8ce93f93a30bf9f58c36ffa9dd775e2ad362ffdcf5ace",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0809",
+    "processed": "processed/DIV2K_0809.png",
+    "processed_sha256": "180ed30c1234e185aa39f6a80cde6716a42546aa47fba12b7a0f1c249fc76940",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0809.png",
+    "source_sha256": "a0b094da02bcaeabea1976fb939c87366d437bdda1a796fbc3f4700fb5e7bbed",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0810",
+    "processed": "processed/DIV2K_0810.png",
+    "processed_sha256": "5d4c68bf759211cba529ff58c2419625122c910b64a23230da9302c68178b00e",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0810.png",
+    "source_sha256": "6940c660b97d2c5f1113101c3e6360d1d6886743c5796cad52224b8076b903f8",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0811",
+    "processed": "processed/DIV2K_0811.png",
+    "processed_sha256": "c4ed44ad3d5cddb8830a09f9a9fe1a3c16464168149996ffe1aa36f5d44f3495",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0811.png",
+    "source_sha256": "7016bcf4112049162da604772c810bed4f5983af52e07d23755ac2c3475fe8ad",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0812",
+    "processed": "processed/DIV2K_0812.png",
+    "processed_sha256": "485108331b086db95c503aba9089075e63c27481deac2e87bbe72e5cee52c71a",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0812.png",
+    "source_sha256": "49e45b8922872b44ece90db047756f3a5356612bb6ee30bdc23df2bd208ec861",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0813",
+    "processed": "processed/DIV2K_0813.png",
+    "processed_sha256": "079dda345cde2d5a61facd8f43a6c9f82c7a3566a745ab1263d127b2160f5065",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0813.png",
+    "source_sha256": "71c06a2c36979345c99c887e7bd6aebfd0bd1648d93b7bd15f56c65e1291b37e",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0814",
+    "processed": "processed/DIV2K_0814.png",
+    "processed_sha256": "bda2da1a1056d4449aa5c6fff01e4e8293fc6287a2851873ee18ebc3b29da964",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0814.png",
+    "source_sha256": "2fec903d11d2a79070268a4316c100f8314eaadd8f8a65cce152f14826f04876",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0815",
+    "processed": "processed/DIV2K_0815.png",
+    "processed_sha256": "d9e43c7d091977b275da79ab80605b8ca471443d45c5dd0d094e0d4b6581e986",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0815.png",
+    "source_sha256": "c8f278e51f2bc9be7a696935b7e386eb4adafde24572d8ecdd4edf8adf4b4108",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0816",
+    "processed": "processed/DIV2K_0816.png",
+    "processed_sha256": "62eb0730e3236ccafd54b344bc8ccf309b048a988898963ddcb2a318f96b1461",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0816.png",
+    "source_sha256": "87b7b2a666c92efdb24eadf67bc0c68bce5560ee89bd0532f50f94d8cf88b434",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0817",
+    "processed": "processed/DIV2K_0817.png",
+    "processed_sha256": "77f398318d6268f04eb4d9c5e6ebcde7c3dd88049e7ba3aee6209bd2dc8cff21",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0817.png",
+    "source_sha256": "fdb28a6df3408758cc6d87563a157081c22d1325ea6d8034405ce45abcfc3879",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0818",
+    "processed": "processed/DIV2K_0818.png",
+    "processed_sha256": "a8642b6de9f0e69535c8eaa33f5ff014d917233d4c74bfe0a8833dae058a711e",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0818.png",
+    "source_sha256": "8679d88891d7e8491fd61abded2c6864d90f5c1817b300f5d5796d05bb11488f",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0819",
+    "processed": "processed/DIV2K_0819.png",
+    "processed_sha256": "e1dd23f7643155a764779a46bc057e42bae7794fdbb0424a63fd7636191a8769",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0819.png",
+    "source_sha256": "fcbc6cb7e7cdb717e94d8c8eaf659d6b2bfa513aa133c0d2c4a8e2aa96092529",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0820",
+    "processed": "processed/DIV2K_0820.png",
+    "processed_sha256": "58709cca45159bc11a4a05d5af409d5d5c62466ba441314d3f7f47ac365a77c4",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0820.png",
+    "source_sha256": "2617cfc25dd5442cc017bd17aa24ecae4751b1e5ed6013e8adddb727617bcd5b",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0821",
+    "processed": "processed/DIV2K_0821.png",
+    "processed_sha256": "dcf76643d4d57685c14f8fa825a2a96d07c52dcbd5b94ad569515735ce932daa",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0821.png",
+    "source_sha256": "0eb14dfcb1d21cb5d3437dc5135c458154cd7fabed8147fbdc415d3ef671c14b",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0822",
+    "processed": "processed/DIV2K_0822.png",
+    "processed_sha256": "931a4f8c1c08649d4816138acfed2e99c9e9891cb1cbeebf996b595551dc2d90",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0822.png",
+    "source_sha256": "a1d308fd62adecb1ea8b0fa8d0c687c92d3cf0d3358e598c8b97aca1b9cf8ad0",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0823",
+    "processed": "processed/DIV2K_0823.png",
+    "processed_sha256": "11d828360bf709c7e219aa3388705ce11b16bf0b708a4789c828d28beec10f2a",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0823.png",
+    "source_sha256": "8db26bddf2ac9975e5227be3eb1180f6377145eee5dca1e421100014cbd7ef6e",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0824",
+    "processed": "processed/DIV2K_0824.png",
+    "processed_sha256": "12ef21ab3ce2b5fea785ad19220dacdcf76a00af47bc2aaf22800f5a8e733486",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0824.png",
+    "source_sha256": "484316545f6b08655d30faa1bc5f29eb6821d049b62bb528319b504790c188e2",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0825",
+    "processed": "processed/DIV2K_0825.png",
+    "processed_sha256": "bb03490480d62a21dcc2479689a8fb494ee3cde97a5ba274edb291821edbdaf0",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0825.png",
+    "source_sha256": "0db87d6f7d6cf3a12fc384d8232c337fe0f509f2518845166c1033e22169115d",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0826",
+    "processed": "processed/DIV2K_0826.png",
+    "processed_sha256": "ad85fddeb2a507b6c844935fb7ac72f12c0068d1005eabb85754b99484e290f7",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0826.png",
+    "source_sha256": "b0f675a14e8fe9f2ec0b705bee98d75f8a22478eafdc1a0a0afc0f820bc5ab4d",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0827",
+    "processed": "processed/DIV2K_0827.png",
+    "processed_sha256": "ae7c31cdc8bb0c068885ca57f8540722f541bf4bfc326308ef1af175caa2ce53",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0827.png",
+    "source_sha256": "e8cfa94ed77a021b63da63406940de3a830fe1217e752b5929d50602a1aaa407",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0828",
+    "processed": "processed/DIV2K_0828.png",
+    "processed_sha256": "851df1f29e95f1b11656481064985ba9448880b8f0e8ab8adae8ae81ada3fccf",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0828.png",
+    "source_sha256": "a62013e252fa503920f54b9b1eff9babd501c742d2c82c97d7c22394493ffa12",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0829",
+    "processed": "processed/DIV2K_0829.png",
+    "processed_sha256": "15a5afd61eddd0491c2896b232795436219f3faa913147bc419f012d16156387",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0829.png",
+    "source_sha256": "de81c82e13d499226fd96505b6a72f59b6b8506c03ff0b6d06b6393d066f68a4",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0830",
+    "processed": "processed/DIV2K_0830.png",
+    "processed_sha256": "83d7d61aa90df0481f3d4006e95d840623b0cb0011ae4ec5b8912c408fb30c9d",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0830.png",
+    "source_sha256": "4eb18566ab01447a06daf0314a3711aa78cea5ca0eaa47cfedafbceeb6dd0a3e",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0831",
+    "processed": "processed/DIV2K_0831.png",
+    "processed_sha256": "8cb481ec743124f688e04e39ef13c62130fcc2b92458f65f7d7f4c4d914c01e6",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0831.png",
+    "source_sha256": "343c5d2665d9c5efd7a5444e72d383f63d96bac35902ed088c9a3ee88e0d4ed2",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0832",
+    "processed": "processed/DIV2K_0832.png",
+    "processed_sha256": "018d3dc7c1f50a64a7728986e617b69694389c03b8bdf4c1d9e00e2570fbbc0e",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0832.png",
+    "source_sha256": "5c609d644b5924900e82dbecadfb85497b77d6cfad52a0c4c7e43a83f9868c33",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0833",
+    "processed": "processed/DIV2K_0833.png",
+    "processed_sha256": "ed006f517df4df4599d9843afbebbe61b8c296752206a4ad192a65b824815d5e",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0833.png",
+    "source_sha256": "2e9668b3a318284ec90c9bbdd940317ecd2f7b95314e68c48c94d2380fad679a",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0834",
+    "processed": "processed/DIV2K_0834.png",
+    "processed_sha256": "f4c700001278423ee16b7aa0c68c0330badaec83499c02f685f6aa47b557eef6",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0834.png",
+    "source_sha256": "4d2621a246e4a771754aa0052b91d79dbebfe866d9dbd8200e3c68e038a3de88",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0835",
+    "processed": "processed/DIV2K_0835.png",
+    "processed_sha256": "f9217b88ba2f7d07bc90fe7063c206f5d6360035d5f01fdf62df14e4985ad9ec",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0835.png",
+    "source_sha256": "263cfd9c7d2eee15b29250e6d0dc366ed680feb222de3f8c2fb5c6bd304608e4",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0836",
+    "processed": "processed/DIV2K_0836.png",
+    "processed_sha256": "fb5869882bd36caaf6cebde2ab0ac5898c31bb1a7095e953200a5a2775bdbce7",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0836.png",
+    "source_sha256": "d056c4afc22367640c8ec7a1b84c06eaa7405e29363f0e75ea824e15aec149d0",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0837",
+    "processed": "processed/DIV2K_0837.png",
+    "processed_sha256": "667de72a1048afa6bdc951391e82f176b5be7c29c66bb9d27f5adfc7b5f7dc09",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0837.png",
+    "source_sha256": "4618bd32e1d1a2ef0f4ad3f6b941e3745a97371fd300dad3c5c4c9013caec8db",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0838",
+    "processed": "processed/DIV2K_0838.png",
+    "processed_sha256": "79a200b056174befec9cb3785e96ec55a26fe20de2e18a250e14b254e3ecbaaa",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0838.png",
+    "source_sha256": "01e42bb5efb35d97a9931fc421f793e3c12d0922a3df288bbfd148b6a82a145b",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0839",
+    "processed": "processed/DIV2K_0839.png",
+    "processed_sha256": "8d89009f88d5a64b7383bd5ea93854574f127f844c7d5b30b123b76c20e142c2",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0839.png",
+    "source_sha256": "818abf16ba0aacc3fb6737c5ddd7c2188ca7321b6b28b7f4ba1898627387dee7",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0840",
+    "processed": "processed/DIV2K_0840.png",
+    "processed_sha256": "dea7cb5d2737b8319ba47325d552f7be638cf3f92fab2247c81ccd5b8605c88b",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0840.png",
+    "source_sha256": "e023c2b2628b7d897d69150baa40be6ceda9fe0e45a0d51348011c6a47b44d86",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0841",
+    "processed": "processed/DIV2K_0841.png",
+    "processed_sha256": "281c43c9d0b91ea26840344865e77de0efc9cd40a417dd6def386cc6e75a9847",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0841.png",
+    "source_sha256": "0f46093cd84e7ee037d1ded8680f2f39583af5dadac0da580a3911ed482de285",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0842",
+    "processed": "processed/DIV2K_0842.png",
+    "processed_sha256": "40ab5736cc8de301e47fbe34292ab587b0362530ad5e07cca9f82a1150923637",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0842.png",
+    "source_sha256": "c6ec845abfd696fcf5f39beadb8632ecc56ac8416318a9dbb27c4c4d294aa592",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0843",
+    "processed": "processed/DIV2K_0843.png",
+    "processed_sha256": "91ea69cb9b0f9caf5bc12375387bedd478de83b466ef69a83ab9200a01c1d27d",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0843.png",
+    "source_sha256": "3ef88e17c711156a52ef8c7385f01b364ade64bb0d90938debfc4b454e0d1e06",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0844",
+    "processed": "processed/DIV2K_0844.png",
+    "processed_sha256": "b90a08f7d2e2e6e07711f5cba0d5de5d149d07ecdeee3851a2bdd535f6b7c1de",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0844.png",
+    "source_sha256": "93da0f98885573c518891c5eb6004818436ae36cf1ed894cfef853e131d9d86d",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0845",
+    "processed": "processed/DIV2K_0845.png",
+    "processed_sha256": "61e7ab1b6d557eaec41de67f2369bad1b069764fcb186e400aedd58e3eecdb50",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0845.png",
+    "source_sha256": "35416e153d4ffd1f83df1502dca371db2059e818b72c1e3a95fb9a9266b59172",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0846",
+    "processed": "processed/DIV2K_0846.png",
+    "processed_sha256": "2dcbcf72ceac5bce4504e3b30c95451403b8fe7aedfb9f3f24b3a02d4a2c8786",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0846.png",
+    "source_sha256": "eaef63b3b0889ea99559e1e959240393505d9f6d4d5cb7f6a90729b024b4ffb4",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0847",
+    "processed": "processed/DIV2K_0847.png",
+    "processed_sha256": "f7d6828a4aacb13f5f143326481561d308be38878f3b9d4e9ffa5a75f95b021f",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0847.png",
+    "source_sha256": "ce39eab49b45fc08177556f7c9ae0d0e928e283fb3cd471bddf0fbf17db8ca73",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0848",
+    "processed": "processed/DIV2K_0848.png",
+    "processed_sha256": "3caba0038496aee3f7e3bccbb6e6b4a6615fddbf699543f57cc91f9d85ece2be",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0848.png",
+    "source_sha256": "4a8f2f4eee348242b17eb7ee72aad9c1c1fe870a1d414db4704819fede40b660",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0849",
+    "processed": "processed/DIV2K_0849.png",
+    "processed_sha256": "71cdd15706328224151f3b7416804b363f4df1184cb577c70d4ff54667a7072e",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0849.png",
+    "source_sha256": "1d576e20f4720050d0b7af5295b323c342a5284ed75a8ce3bae6e0cb46c89eb6",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0850",
+    "processed": "processed/DIV2K_0850.png",
+    "processed_sha256": "96ef8f671e88f75dafd1623f6a5abc30edb5538c301b9f0d63999fd115195230",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0850.png",
+    "source_sha256": "1d026bda033ce6fa0db97aa3ec120f3609663f4d0aaf2f9d8e677fdbe235ab03",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0851",
+    "processed": "processed/DIV2K_0851.png",
+    "processed_sha256": "df30c6c691b6bc5b48fd9ff8a27e8a05bc5a4e1be0c276df0c76c54fc0556fd0",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0851.png",
+    "source_sha256": "1c4bc95887a3c06f9690fec153d5548ec52039c8ba83da749f2b5f6e0d2ecf33",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0852",
+    "processed": "processed/DIV2K_0852.png",
+    "processed_sha256": "c34586b9ab71810556c2e83af95dfc5c712360d14cd33354406ce2b14bf406f7",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0852.png",
+    "source_sha256": "47f4db4100055a954606d789dfe183612ea7e196a06b2e7bc4bd39c3522628ee",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0853",
+    "processed": "processed/DIV2K_0853.png",
+    "processed_sha256": "56d86a393e21509aae749bf5c3bd64dd9ad1ad445182ec403a71876536eb68b4",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0853.png",
+    "source_sha256": "854189ea5c2a325324500c6cf7168e0b78d30b09606eb5a59f938a5ae69139fe",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0854",
+    "processed": "processed/DIV2K_0854.png",
+    "processed_sha256": "4c6a80bf7301196713108f27fe75875d2e241cb85d7ff58735c534f7edfbd1e6",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0854.png",
+    "source_sha256": "f77817c7a5d940baf174efa61d2fbf40354a08ade7a151e155ce62bd2481eca8",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0855",
+    "processed": "processed/DIV2K_0855.png",
+    "processed_sha256": "806fe8951e8a5952e59a1b45dd58c21ca86b87e4a08af32b6de8535349addae6",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0855.png",
+    "source_sha256": "86001004f1eb6a1e182bb2ed3c23093d2656690a61091b2822af1c9124a40141",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0856",
+    "processed": "processed/DIV2K_0856.png",
+    "processed_sha256": "4aea710666fa3748655727e2edf838135e6d3d73b3f4494f50b4d0a6bdd5375b",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0856.png",
+    "source_sha256": "cf845f85d9f65570938a15f56fe9de749619f9bee35533944f46bba94f0ff77b",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0857",
+    "processed": "processed/DIV2K_0857.png",
+    "processed_sha256": "b05798586ae38cff27d6ed4424d5f831aa27d03e1c602a75ec3e2e7e4f64f651",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0857.png",
+    "source_sha256": "4fafd48e2926f530129290c9f843490dcbf7809c8505c123a5f18ec2a5005611",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0858",
+    "processed": "processed/DIV2K_0858.png",
+    "processed_sha256": "d54852c1d2f00a779013e5c0378527409bda4bd3e01787dc649fa865b08615b0",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0858.png",
+    "source_sha256": "428049494acf4dadf08c5bd62c8711ac258af5fa0f008b5fb389a4fffca96c58",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0859",
+    "processed": "processed/DIV2K_0859.png",
+    "processed_sha256": "8d6aaf316dde9f93ee28285ada5d49e85c148aa69417dace097f68c468319f38",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0859.png",
+    "source_sha256": "3ada872de7c5def1d408920385db278b1ff3a5a0cfcab83105a789ff540a1827",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0860",
+    "processed": "processed/DIV2K_0860.png",
+    "processed_sha256": "0166b130f7de049309459eb2a58d42f42c565251f6332a99d93b2fbccbbe5a1e",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0860.png",
+    "source_sha256": "eac29d623ecfab9e2299c04b49e5da3f282a576eb7f9107d0b88076c972ac3ef",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0861",
+    "processed": "processed/DIV2K_0861.png",
+    "processed_sha256": "011ae01c50ab48cc91ddda4a452146bfa42e7080b72b964561c5bd0efe9ef738",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0861.png",
+    "source_sha256": "c6fe192a3f1b702948e99c483f04edfb362d2d218082a12457a5b0f09219ffc6",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0862",
+    "processed": "processed/DIV2K_0862.png",
+    "processed_sha256": "fda795a23a4d602d37f4d6b452c94ad3e06ea19497dcfe47964a64916d2bcebc",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0862.png",
+    "source_sha256": "31a02d7392ee9dadd4b8a2c1b5b9d670943135d0d40e85d4178ab77923c75548",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0863",
+    "processed": "processed/DIV2K_0863.png",
+    "processed_sha256": "aa7a94f36dbea9ffac153d73cea77c3fc0a32880dee58876ed79d273c932641d",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0863.png",
+    "source_sha256": "5e98cca0fbeb2e649fa36a41a06240ce4ec4b05aa23859da13797f8ded0d5c1f",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0864",
+    "processed": "processed/DIV2K_0864.png",
+    "processed_sha256": "db1185cb0bfedae773c93574e9f72f9bd0d12490f644474fd68b6f249c25521d",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0864.png",
+    "source_sha256": "ca9811dd5910f947ee4dc75f709dcffe17bb7811ca562a0e4bcdefc781eadd76",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0865",
+    "processed": "processed/DIV2K_0865.png",
+    "processed_sha256": "961209f3f31af84db63c183c589c890e97a72775a802c8c2f278fc2d76407b63",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0865.png",
+    "source_sha256": "46ced1e049fce5a0381c3dc7d7276d058f78a7a7dab5cd88ef7a224cbf51fdb1",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0866",
+    "processed": "processed/DIV2K_0866.png",
+    "processed_sha256": "946e356411831084a67833f5792483736e583d74da4168ba787dd1ca719fce1c",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0866.png",
+    "source_sha256": "7fc232b9294ea4e6f32bdacc26f314efc067ee0359c5ff1a7000ec61c8da8511",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0867",
+    "processed": "processed/DIV2K_0867.png",
+    "processed_sha256": "56669fb79d3c5ecdea681f6cd06e908fdbc06f2e60626e8ac254e13e9db0c4b9",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0867.png",
+    "source_sha256": "e3c2ee14a108f50479db683e3a6adc3682374eba236f64c74397fdb55a17b264",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0868",
+    "processed": "processed/DIV2K_0868.png",
+    "processed_sha256": "be9441f7e215131c212c299e457a2efd81a1b8432e94c35b2394c2e7fd6548d6",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0868.png",
+    "source_sha256": "ba7de4237fa7cbdc2fff31f35015711909e501230e7c2f3f01f4e8dcf7a23c95",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0869",
+    "processed": "processed/DIV2K_0869.png",
+    "processed_sha256": "816728a8f5812f466c3ea20ae61ea193c8d04ed80db485fcbc82ed06171e81c6",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0869.png",
+    "source_sha256": "68a693195536fc94bc34ce7ff0e041990916fed73164a7c2dce00098a178ac75",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0870",
+    "processed": "processed/DIV2K_0870.png",
+    "processed_sha256": "990ed5c38b86778611e79ed3b9dcc9426ea78c244c086bd22e890cb6a523d203",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0870.png",
+    "source_sha256": "f03f496bb0f21d53012723782bfdbcbbde66115c45c35aa7d83373c304a9c041",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0871",
+    "processed": "processed/DIV2K_0871.png",
+    "processed_sha256": "8fac555cbab2ef7d22dcd604c31dba19f2ee82bb456bbc7bb74447499581a986",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0871.png",
+    "source_sha256": "777df9ed736ff3ccc73388e90de36e131c002dfac64767f3b8ebccdd2cd5f058",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0872",
+    "processed": "processed/DIV2K_0872.png",
+    "processed_sha256": "d3230ea41bc81dc135ee6228f73ed6f2c66c352c330c572d4857603fe2434142",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0872.png",
+    "source_sha256": "028ca10affee013698c7f15068fe4813a9d7b2c24f2bd40dac68305774a5577a",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0873",
+    "processed": "processed/DIV2K_0873.png",
+    "processed_sha256": "d376f4b451155296298f811cb9795f311f9b327ff4b12b5faed806396ead4e5a",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0873.png",
+    "source_sha256": "3fcb2ae160dd255180854eaf54051c40cd205421367d0352144bb7490bc9afb1",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0874",
+    "processed": "processed/DIV2K_0874.png",
+    "processed_sha256": "be601335d09ec60789268604540aeb86c2ee61e61103df224d93bfcac0ee509c",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0874.png",
+    "source_sha256": "11cb511247d70d84adad5557a720254e5f73e3786dbcd399c6053a1982ce1784",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0875",
+    "processed": "processed/DIV2K_0875.png",
+    "processed_sha256": "b71c78a0804b65d4c26736b295857d33cfc2d27cdac10acb9b85398c714ed38a",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0875.png",
+    "source_sha256": "3c4859b59635fe7fcd6ec182c798eb3af44a2eafb6e8b891df3db62d0da3c5e2",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0876",
+    "processed": "processed/DIV2K_0876.png",
+    "processed_sha256": "e9522094b742a3f08165a48c9fd34ed0d12f6301d375cc405795d2005b770575",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0876.png",
+    "source_sha256": "9d5a819847876bb0061bf1fd42b8bd97e8aef89d1f5fb09b1669b7e9546a25f1",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0877",
+    "processed": "processed/DIV2K_0877.png",
+    "processed_sha256": "8a4066bb3b1da97ac90478f98e0c26e3a3939feb771fa960e67992a230bb183e",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0877.png",
+    "source_sha256": "4e0fb583729accf7b93e07b2b81ce8d919f6490cee2d1f90db90b60095a59165",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0878",
+    "processed": "processed/DIV2K_0878.png",
+    "processed_sha256": "1b3069980e10236179461c7c50dbf839e64d980327a342019f49ecfdb98009ac",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0878.png",
+    "source_sha256": "e1aff248577bc04ddeba4f48a62aff421ca06450a703e4a450dd401e1efd9546",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0879",
+    "processed": "processed/DIV2K_0879.png",
+    "processed_sha256": "1c42d38c98624cd24d3ab878b5c86e82a9085680060b6caf82aecaf13b847fd7",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0879.png",
+    "source_sha256": "ad5eb9637c891994c00f44358cf0a5238f642b8796b5cacaa8b59ba8bb51553a",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0880",
+    "processed": "processed/DIV2K_0880.png",
+    "processed_sha256": "466b83c3fc62393d723995922f5465021476de7e3ce163e8f3944d2b3c2fa9e1",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0880.png",
+    "source_sha256": "db5773c6e460824c5132c23917492fda7acd370c87e9ae6293a0103fee2b642d",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0881",
+    "processed": "processed/DIV2K_0881.png",
+    "processed_sha256": "79b77d79666ce42da78b2b384a401ef11ef1d60168f2b472837d4a9998768af2",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0881.png",
+    "source_sha256": "d2fba016ee3cee2395b677524d7ae2b2f6750cea1a6df4edc41f2977bd5d1b7c",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0882",
+    "processed": "processed/DIV2K_0882.png",
+    "processed_sha256": "34fee092f8b1b0b698c360becccf4b289874dbbc5f4dd95301e77cf984dea7ce",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0882.png",
+    "source_sha256": "573345fb42061a43fe8f1c0b3b9faf57cdd77189782a4d89b78c31e421f19115",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0883",
+    "processed": "processed/DIV2K_0883.png",
+    "processed_sha256": "3c8d2635083f7d95112c826e18281ab5a4eca72ea2785a06c707f55b2cdbd14a",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0883.png",
+    "source_sha256": "3355621b3d834c320a66879e6cd23988df29f504f6cdecd22f1984b432a7e55a",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0884",
+    "processed": "processed/DIV2K_0884.png",
+    "processed_sha256": "4275d715fe5d9669aa82e2c5d2e18b106585e0f49a20a70024e43e88988060f3",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0884.png",
+    "source_sha256": "06a928200ad757ff2422ecd2e12986bb90e3bf6b64c6062e5d31f864cdc992bc",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0885",
+    "processed": "processed/DIV2K_0885.png",
+    "processed_sha256": "b2855ad2493c2f5097c38cd60d24e6d8441fd68ae008cf72d6ae7d01b0a11311",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0885.png",
+    "source_sha256": "36f1c2b8af6d898354506ef3f78d386156cf1c1f1397c165a84e74cf6484d800",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0886",
+    "processed": "processed/DIV2K_0886.png",
+    "processed_sha256": "c2841959693c0fba02b178d63741be75c512962a5a1e45cd5c428d9497152796",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0886.png",
+    "source_sha256": "26af6bcdeea90b9900a021bf20a0550d9a1e107c59b4f05c96e8bccf0ab35db8",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0887",
+    "processed": "processed/DIV2K_0887.png",
+    "processed_sha256": "c688ffb74a8124f7226f141775fd4719852cf4cb7783e4a4ab598934a034d073",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0887.png",
+    "source_sha256": "a0a893c9417fcd04067bf254512801f92ae7c795b686e05f7389853c9fb78b11",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0888",
+    "processed": "processed/DIV2K_0888.png",
+    "processed_sha256": "b91bbff6ebd0a6917ff5d97c1cb15a10eb49d6ee77c2e42b4cc0382ff3d70362",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0888.png",
+    "source_sha256": "82a8d193f4eb0819ad3e48c048d13860d0b8f34d6fafc9b626e304294db3ba12",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0889",
+    "processed": "processed/DIV2K_0889.png",
+    "processed_sha256": "2257fd6b0c932cb378e1d9b660fcb635c12f32c7228aa375550388624ed9f1fc",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0889.png",
+    "source_sha256": "a8f73c42065e3193c4deb883dcb3bc432a3f838e9be5bacea708ee39eb2c6e04",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0890",
+    "processed": "processed/DIV2K_0890.png",
+    "processed_sha256": "a9827207f61f2656f098eadc230881d3ae192dca5527b20f46f57eb280610e5d",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0890.png",
+    "source_sha256": "67069da53af2b4f5237030631b0b5e087b8014d7b0f59917d96924aca1ab433c",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0891",
+    "processed": "processed/DIV2K_0891.png",
+    "processed_sha256": "6671684e305571750937783cee8bba381657cff4483caa7e7bd88f917d310f0c",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0891.png",
+    "source_sha256": "8e36e76f3675831c87b2e645e70ef33513b898dc09beb20b0bdcc61cc6d63bed",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0892",
+    "processed": "processed/DIV2K_0892.png",
+    "processed_sha256": "91e485624b5710ba9051773e3437fce62943462efe1831c45b5dcf49a264c817",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0892.png",
+    "source_sha256": "7fb05e491f00963e64b53a0f3f7a3d1af51f1434e7fd4898d4b84c479e1f66f9",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0893",
+    "processed": "processed/DIV2K_0893.png",
+    "processed_sha256": "4b1137a597eb2809843e8a5211bde07334a587bac45a7ed26b89ee3e06ba6258",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0893.png",
+    "source_sha256": "cdcef3c0f0dd65da7ca0c4e75b672dd1f87f778740cb42d675bcb13dc1b3c307",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0894",
+    "processed": "processed/DIV2K_0894.png",
+    "processed_sha256": "308a9d449a7a18a0f51fc24ef2ee37d75baf68893dbba562a3339aa4d6e7c9ed",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0894.png",
+    "source_sha256": "f412ff02984a0de7acc7e1209d02f8dcaa18ac76008fa260cf7c355e4a77976c",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0895",
+    "processed": "processed/DIV2K_0895.png",
+    "processed_sha256": "153a8922621e7e8e9802cd71308d43986c665f5c5d7abd0340cba23a5971e735",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0895.png",
+    "source_sha256": "a1c0888648fed4eb909c6e7f5f5db220ae98861294ebfdfa14b2c72567e96b2b",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0896",
+    "processed": "processed/DIV2K_0896.png",
+    "processed_sha256": "b5979f8911f7dd41a43641e03b8827adc455de873a4540878b66f9699212557f",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0896.png",
+    "source_sha256": "367c698aa344cea6e790239f04bae168ef204ae771f6ea05285e5255fad2f84f",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0897",
+    "processed": "processed/DIV2K_0897.png",
+    "processed_sha256": "14723cd18aec2ca9d12f78d9785e48d5c01c4ba828e41ee4e4d5ce578ab45b27",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0897.png",
+    "source_sha256": "dca63f56dba4a2a2c6b920c4b0406c6c6459d8f7ffb0d20322f51fbbc8f14b38",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0898",
+    "processed": "processed/DIV2K_0898.png",
+    "processed_sha256": "4a1ed8659975336635a958e590fa79e3dea30636721ae26ee38ef35cde99a096",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0898.png",
+    "source_sha256": "4cd6696b8e59615ceacff729181dd9b0cc5ea936ea9a57e089bb1fe4fe87c347",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0899",
+    "processed": "processed/DIV2K_0899.png",
+    "processed_sha256": "12b19046e0c3841140b54e380cc3bd4b395e2c093f3caafc7becd60c536f47f1",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0899.png",
+    "source_sha256": "77e25eca6c3828abbea8f7fcf360d9be7f496513aa9ec08ff3f2e3a9c272e60e",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  },
+  {
+    "image_id": "DIV2K_0900",
+    "processed": "processed/DIV2K_0900.png",
+    "processed_sha256": "bad1c147dcf5927839481ede3e9ee905da749a6f27080cea254dce28cc678456",
+    "provenance": "DIV2K official HR; academic research use",
+    "shape": [
+      512,
+      512,
+      3
+    ],
+    "source": "original/DIV2K_valid_HR/0900.png",
+    "source_sha256": "06717f2a8f5d21fcec9a9229a7ecaab44dec0343406a59464382f5c4fdea3023",
+    "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+    "split": "test"
+  }
+]

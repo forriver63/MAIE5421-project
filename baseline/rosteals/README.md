@@ -1,0 +1,7 @@
+# RoSteALS
+
+Author: https://github.com/TuBui/RoSteALS . Author-linked deployment: https://huggingface.co/spaces/tubui/rosteal/blob/main/Dockerfile . The measured source/checkpoint came from the author-linked tuvbui/rosteal_cpu container, extracted without running the container. Keep upstream licenses. Place that source at WM_ROOT/third_party/rosteals_author_demo and its checkpoint at models/epoch=000017-step=000449999.ckpt beneath that checkout. No weights are redistributed; expected hash is in ../team10/assets.sha256.json.
+
+adapter.py exports RoSteALS and NativeBCH. Native100 bits encode56 information bits,40 stored BCH parity bits (polynomial137,t5), plus four zeros. First32 information bits are the shared payload; remaining24 are zero padding A or seeded random padding B. Call NativeBCH.encode(bits56), RoSteALS.embed(rgb,packet100), RoSteALS.extract(received_rgb), then NativeBCH.decode(scores>threshold). Decode failure is an erasure, not the author's random-data fallback. Failed/incorrect messages stay in the denominator. Native256, signed RGB, default residual strength1, vector quantization retained, whole received image resized.529 inference tensors load strictly.
+
+Dependencies: project PyTorch stack, bchlib2.1.3, pytorch-lightning1.9.5, torchmetrics0.11.4 and lightning-utilities0.10.1. The source tree supplies ldm/cldm modules. Set WM_ROOT before importing. See [shared protocol and results](../team10/README.md).
