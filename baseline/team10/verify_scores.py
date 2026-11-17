@@ -13,12 +13,17 @@ def verify():
     totals = defaultdict(lambda: [0, 0, 0, 0, 0., 0.])
     keys = set()
     variants = {'full_png', 'hidden045_bits', 'redmark_A', 'redmark_B',
-                'rosteals_A', 'rosteals_B', 'sepmark_B'}
+                'rosteals_A', 'rosteals_B', 'sepmark_A', 'sepmark_B'}
+    conditions = {'clean', 'jpeg75', 'jpeg50', 'noise2', 'noise5', 'crop75_jpeg75'}
+    conditions.update(f'rotate{angle:+d}' for angle in (-10, -5, -2, -1, 1, 2, 5, 10))
+    images = json.loads((root / 'images.json').read_text(encoding='utf-8'))
+    assert len(images) == 10
     with gzip.open(root / 'cases.jsonl.gz', 'rt', encoding='utf-8') as f:
         for line in f:
             r = json.loads(line)
             v, i, seed = r['variant'], r['image_index'], r['seed']
             assert v in variants and i in range(10) and seed in range(3)
+            assert r['image'] == images[i]['name'] and r['condition'] in conditions
             key = (v, i, seed, r['condition'])
             assert key not in keys
             keys.add(key)
@@ -60,7 +65,7 @@ def verify():
                 np.testing.assert_array_equal(r['expected_bits'], np.r_[truth, pad])
                 scores = np.asarray(r['scores'])
                 threshold = .5 if v.startswith('redmark') else 0
-                assert scores.shape == (capacity,) and r['threshold'] == threshold
+                assert scores.shape == (capacity,) and np.isfinite(scores).all() and r['threshold'] == threshold
                 exact = np.array_equal(scores[:32] > threshold, truth)
                 accepted = True
             assert r['exact'] == bool(exact)
@@ -72,21 +77,24 @@ def verify():
             t = totals[v]
             for k, value in enumerate([int(exact), 1, int(r['wrong']), int(r['erasure']), r['psnr'], r['ssim']]):
                 t[k] += value
-    assert len(keys) == 2940 and len(counts) == 98
+    assert keys == {(v, i, s, c) for v in variants for i in range(10) for s in range(3) for c in conditions}
     with (root / 'conditions.csv').open(newline='') as f:
         table = list(csv.DictReader(f))
-    assert len(table) == 98
+    assert len(table) == len(counts) == 112
+    assert {(row['variant'], row['condition']) for row in table} == counts.keys()
     for row in table:
         exact, total = counts[row['variant'], row['condition']]
         assert [exact, total] == [int(row['exact']), int(row['cases'])]
         assert total == 30 and abs(exact/total-float(row['recovery'])) < 1e-12
     with (root / 'overall.csv').open(newline='') as f:
-        for row in csv.DictReader(f):
+        overall = list(csv.DictReader(f))
+        assert len(overall) == len(variants) and {row['variant'] for row in overall} == variants
+        for row in overall:
             a, n, w, e, p, s = totals[row['variant']]
             assert [a, n] == [int(row['exact']), int(row['cases'])]
             for field, value in [('recovery', a/n), ('wrong', w/n), ('erasure', e/n), ('psnr', p/n), ('ssim', s/n)]:
                 assert abs(value-float(row[field])) < 1e-9, (row['variant'], field)
-    print('Verified 2940 unique cases, deterministic messages, all 98 conditions and overall metrics.')
+    print('Verified 3360 unique cases, deterministic messages, all 112 condition rows and overall metrics.')
 
 
 if __name__ == '__main__':

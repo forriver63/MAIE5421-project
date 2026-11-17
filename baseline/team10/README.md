@@ -1,10 +1,12 @@
 # Four learning-based baselines: shared team protocol
 
-This folder contains **HiDDeN, ReDMark, RoSteALS and SepMark** under the team's ten-image protocol. ReDMark/RoSteALS A/B are padding settings, not additional models. The original [100-image HiDDeN study](../README.md) remains unchanged; do not pool its family-macro scores with these flat fourteen-condition averages.
+This folder contains **HiDDeN, ReDMark, RoSteALS and SepMark** under the team's ten-image protocol. ReDMark, RoSteALS and SepMark each have A/B padding settings. The [100-image HiDDeN study](../README.md) uses a separate evaluation protocol.
 
 ## Results
 
-See [English report](REPORT_EN.html), [report insertion text](REPORT_INSERT_EN.txt), [overall.csv](overall.csv) and [conditions.csv](conditions.csv). Full307/420=73.10%; HiDDeN72/420=17.14%; ReDMark A/B135/420=32.14%; RoSteALS A214/420=50.95%, B211/420=50.24%; SepMark170/420=40.48%. Full has higher observed mean recovery and clean PSNR under these settings; it does not win every attack. JPEG/noise favor several baselines. Eight rotation conditions strongly influence the flat mean.
+Full recovered 73.10% of messages, HiDDeN 17.14%, ReDMark A/B 32.14%, RoSteALS A 50.95% and B 50.24%, and SepMark A 40.95% and B 40.48%. Several baselines led on JPEG and noise. Eight rotation conditions contribute to the flat mean. See the [English report](REPORT_EN.html), [report text](REPORT_INSERT_EN.txt), [overall results](overall.csv) and [per-condition results](conditions.csv).
+
+SepMark A and B use identical payloads, images and attacks, with zeros or seeded random bits in the 96 padding positions. The difference in exact 32-bit recovery was +0.48 percentage points for A, with a paired image-bootstrap 95% interval of [−0.48, +1.67]. See the [padding comparison statistics](sepmark_padding_ci.json).
 
 ## Protocol and scoring
 
@@ -14,13 +16,13 @@ HiDDeN default0.45/native512 main score checks only32 useful bits, not its16-bit
 
 ## Independent cached verification
 
-cases.jsonl.gz contains2940 cases: Full plus six baseline/settings. Each retains decoder predictions, useful truth and outcome; no images or checkpoints. Run from repository root:
+`cases.jsonl.gz` contains 3,360 cases across Full and seven baseline settings. Each record retains the decoder predictions, expected payload and outcome. Run the verifier from the repository root.
 
 ```sh
 python baseline/team10/verify_scores.py
 ```
 
-Requires NumPy and bchlib2.1.3. The verifier recomputes useful-message outcomes, validates deterministic messages and all98 per-condition rows. It verifies Full's reported payload against truth, not its neural localization. Adapters are reusable inference components requiring external author assets; this is not an automatic dependency/download installer. WM_ROOT is an external asset root, never a hard-coded machine path. assets.sha256.json records observed integrity, not an author cryptographic signature.
+Requires NumPy and bchlib 2.1.3. The verifier reconstructs deterministic payloads and padding, checks the full case grid and verifies all 112 per-condition rows and overall metrics. For Full it verifies the cached receiver output. The adapters require external author assets under `WM_ROOT`. The asset hashes record the files used in the experiment.
 
 ## Limits
 
