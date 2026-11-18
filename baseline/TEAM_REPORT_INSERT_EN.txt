@@ -1,0 +1,11 @@
+Component ablation and system comparison
+
+We evaluated 100 DIV2K validation images with three deterministic 32-bit messages per image. Twenty separate training images were used for calibration. Each complete system was tested on 28 attacks (8,400 positive cases) and 100 clean unmarked images. E1 used the 20 core attacks (6,000 cases). Images were center-cropped to 512×512 RGB and embeddings were PNG-quantized before attacks. Core recovery equally weights six attack families; paired intervals resample images, with 2,000 bootstrap replicates.
+
+Full achieved 78.34% exact recovery. Disabling BCH during decoding reduced recovery to 56.50% (Full gain 21.85 pp, 95% CI 19.98–23.77); removing BCH at embedding yielded 57.20% (gain 21.14 pp, CI 19.22–23.06). These complementary controls support BCH in this architecture. CRC raised exact recovery by 1.85 pp (CI 1.34–2.44), while reducing wrong-message output from 0.6574% to 0.02546%. Its main contribution is reliable rejection. Single-copy decoding averaged 58.05% across 16 layouts.
+
+Full crop recovery was 79.94%, compared with 36.17–54.89% across single-copy layouts. The zero acceptances among 100 unmarked images do not isolate CRC/BCH effects: the localized detector returned no clusters for these images.
+
+Full exceeded the tested Meta JND HiDDeN implementation at default strength 0.45 (27.70%; gain 50.65 pp, CI 45.03–55.96) and closer-PSNR strength 0.3615234375 (15.78%; gain 62.56 pp, CI 57.06–67.48). Full and the latter had PSNR 39.2428/39.2467 dB, but SSIM remained different (0.98559/0.97751). The 256-resolution calibration check did not meet the prespecified expansion gate and is reported separately; it does not establish equivalence of resolution protocols.
+
+These are complete-message, system-level comparisons with different logical budgets (Full 256, HiDDeN 48 bits for 32 useful bits). They do not establish superiority in every metric or every individual case. Full PSNR 39.24 dB falls below the proposal target of 40 dB. Large rotations remain a failure mode: exact recovery is 11.67% at −10° and 7.33% at +10°.

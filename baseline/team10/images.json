@@ -1,0 +1,42 @@
+[
+  {
+    "name": "astronaut",
+    "sha256": "5056b05608d58b1fb791eb4070748a49f08d9ab57e9c950ca48fe7baf33db515"
+  },
+  {
+    "name": "coffee",
+    "sha256": "bf123ce0ebebe224a8db294a165efc3b4a0fa96978451decf1301138017414ba"
+  },
+  {
+    "name": "chelsea",
+    "sha256": "00a5e010b0ac37dbcf0d31f09fcd88e793a5be62ca181fb700de745aa45575cb"
+  },
+  {
+    "name": "rocket",
+    "sha256": "86e91780f0d6687e7ce95bb399b3209450824f5802e849726e842428351f641e"
+  },
+  {
+    "name": "hubble",
+    "sha256": "2ee77f8b9c249a91d1aa6b8303ceb8a9060de2b6e987873a7efb83b00f8f89a4"
+  },
+  {
+    "name": "immunohistochemistry",
+    "sha256": "b645cc116f07584440e6317a667259653e17db6524d9fedde6f519b23c1855da"
+  },
+  {
+    "name": "retina",
+    "sha256": "b6ecc53b5bf8f5fddd27d255fbd6eb9072c29d32807594a8076daa2cb0d2436a"
+  },
+  {
+    "name": "motorcycle",
+    "sha256": "82188cea87afaccb1699692665cc3bc3c10e006dd2bde7edcef2bab78777cb51"
+  },
+  {
+    "name": "camera",
+    "sha256": "ce32863dbdf226d611dc979713791281e23d22dedf25aae72729837345ba693c"
+  },
+  {
+    "name": "coins",
+    "sha256": "d76a49f4e792de5f43d35653af72bf50011deac555081b73ce82662781c9e0f8"
+  }
+]
