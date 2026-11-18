@@ -1,0 +1,167 @@
+{
+  "method": "Al-Haj 2007 core + explicit RGB-Y/32-bit adapter",
+  "status": "development screening, not paper-table or matched-quality WAM comparison",
+  "team_commit": "e43778855daee459079feb6394150355d66d5744",
+  "config": {
+    "alpha": 20.0,
+    "pn_seed": 2007,
+    "subband": "HL2",
+    "color_mode": "rgb_y",
+    "repetitions": 1
+  },
+  "payload_bits": 32,
+  "embedded_bit_instances": 32,
+  "images": 10,
+  "payload_seeds": [
+    0,
+    1,
+    2
+  ],
+  "source_sha256": {
+    "watermark.py": "58ac762a64c354391881a6fc282baafb66404761d5bfdac86300910a44e79235",
+    "prepare_data.py": "ba43877c03d24916efb9032aa0506ac55a5a1334dc25905365dc6a07a18eb99e",
+    "protocol.py": "3f78af63668e03c242e2a480322e42558224f28a21b818f34b928eaa52904c8c",
+    "cli.py": "48cc4e6437559094a131e61f36714b0c891f4147afb9fd807b8a597f46326961",
+    "run_team10.py": "1b8b8c6b434177adebe10e93b39f485199a9d912336a26360b132692a90b3ef0"
+  },
+  "dataset": {
+    "repo": "https://github.com/forriver63/MAIE5421-project",
+    "commit": "e43778855daee459079feb6394150355d66d5744",
+    "images": [
+      {
+        "image_index": 0,
+        "name": "astronaut",
+        "file": "team10/astronaut.png",
+        "sha256": "5056b05608d58b1fb791eb4070748a49f08d9ab57e9c950ca48fe7baf33db515",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "source_path": "validation_wam_20261007/official_results/inputs/astronaut.png"
+      },
+      {
+        "image_index": 1,
+        "name": "coffee",
+        "file": "team10/coffee.png",
+        "sha256": "bf123ce0ebebe224a8db294a165efc3b4a0fa96978451decf1301138017414ba",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "source_path": "validation_wam_20261007/official_results/inputs/coffee.png"
+      },
+      {
+        "image_index": 2,
+        "name": "chelsea",
+        "file": "team10/chelsea.png",
+        "sha256": "00a5e010b0ac37dbcf0d31f09fcd88e793a5be62ca181fb700de745aa45575cb",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "source_path": "validation_wam_20261007/official_results/inputs/chelsea.png"
+      },
+      {
+        "image_index": 3,
+        "name": "rocket",
+        "file": "team10/rocket.png",
+        "sha256": "86e91780f0d6687e7ce95bb399b3209450824f5802e849726e842428351f641e",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "source_path": "validation_wam_20261007/official_results/inputs/rocket.png"
+      },
+      {
+        "image_index": 4,
+        "name": "hubble",
+        "file": "team10/hubble.png",
+        "sha256": "2ee77f8b9c249a91d1aa6b8303ceb8a9060de2b6e987873a7efb83b00f8f89a4",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "source_path": "validation_wam_20261007/official_results/inputs/hubble.png"
+      },
+      {
+        "image_index": 5,
+        "name": "immunohistochemistry",
+        "file": "team10/immunohistochemistry.png",
+        "sha256": "b645cc116f07584440e6317a667259653e17db6524d9fedde6f519b23c1855da",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "source_path": "validation_wam_20261007/official_results/inputs/immunohistochemistry.png"
+      },
+      {
+        "image_index": 6,
+        "name": "retina",
+        "file": "team10/retina.png",
+        "sha256": "b6ecc53b5bf8f5fddd27d255fbd6eb9072c29d32807594a8076daa2cb0d2436a",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "source_path": "validation_wam_20261007/official_results/inputs/retina.png"
+      },
+      {
+        "image_index": 7,
+        "name": "motorcycle",
+        "file": "team10/motorcycle.png",
+        "sha256": "82188cea87afaccb1699692665cc3bc3c10e006dd2bde7edcef2bab78777cb51",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "source_path": "validation_wam_20261007/official_results/inputs/motorcycle.png"
+      },
+      {
+        "image_index": 8,
+        "name": "camera",
+        "file": "team10/camera.png",
+        "sha256": "ce32863dbdf226d611dc979713791281e23d22dedf25aae72729837345ba693c",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "source_path": "validation_wam_20261007/official_results/inputs/camera.png"
+      },
+      {
+        "image_index": 9,
+        "name": "coins",
+        "file": "team10/coins.png",
+        "sha256": "d76a49f4e792de5f43d35653af72bf50011deac555081b73ce82662781c9e0f8",
+        "shape": [
+          512,
+          512,
+          3
+        ],
+        "source_path": "validation_wam_20261007/official_results/inputs/coins.png"
+      }
+    ],
+    "preprocessing": "byte-identical copies of committed RGB 512x512 PNGs; no new resize/crop"
+  },
+  "versions": {
+    "python": "3.10.14",
+    "numpy": "1.26.4",
+    "Pillow": "10.4.0"
+  },
+  "clean_policy": "mainline normalized float tensor; PNG preview only",
+  "ssim_settings": "watermarking.metrics.quality",
+  "ber_policy": "effective32-bit BER on decoded cases; denominator and extraction failures reported separately",
+  "geometry_policy": "rotation decoded without angle; changed dimensions rejected; no oracle crop alignment",
+  "differences_from_team_historical": [
+    "no WAM localization/packet metrics or calibrated presence detection"
+  ],
+  "finished": true
+}
