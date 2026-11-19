@@ -1,0 +1,6 @@
+# CSV byte hashes in integrity.json include the writer's CRLF line endings.
+*.csv -text
+*.gz binary
+*.json text eol=lf
+*.md text eol=lf
+*.txt text eol=lf

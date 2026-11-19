@@ -1,0 +1,2 @@
+comparison,difference,lower,upper,images,replicates,seed
+svd_minus_dwt_dct,0.06361111111111112,0.02082638888888888,0.10084027777777775,100,2000,20261106

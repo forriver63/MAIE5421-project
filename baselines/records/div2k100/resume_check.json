@@ -1,0 +1,8 @@
+{
+  "image": "DIV2K_0801",
+  "method": "svd",
+  "seed_restored_from_disk": 0,
+  "png_mtime_preserved": true,
+  "identical_positive_rows": 84,
+  "cases_sha256": "c7ae8cd61fcbcfe372df4e695d43947fce6397bc33c303acf6cae69b395a338d"
+}

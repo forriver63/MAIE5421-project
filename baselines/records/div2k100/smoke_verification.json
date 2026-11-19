@@ -1,0 +1,19 @@
+{
+  "image_id": "DIV2K_0801",
+  "methods": {
+    "dwt_dct": {
+      "embeddings": 3,
+      "module": "baselines.dwt_dct.watermark",
+      "negative_controls": 1,
+      "positive_cases": 84,
+      "status": "passed"
+    },
+    "svd": {
+      "embeddings": 3,
+      "module": "baselines.svd.rgb_adapter",
+      "negative_controls": 1,
+      "positive_cases": 84,
+      "status": "passed"
+    }
+  }
+}

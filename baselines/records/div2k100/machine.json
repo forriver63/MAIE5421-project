@@ -1,0 +1,18 @@
+{
+  "os": "Windows-10-10.0.26200-SP0",
+  "cpu": "Intel(R) Core(TM) Ultra 7 251HX",
+  "logical_cpus": 18,
+  "gpu_present": "NVIDIA GeForce RTX 5070 Laptop GPU, 8151 MiB, 591.91",
+  "execution_device": "CPU",
+  "workers": 6,
+  "blas_threads": 1,
+  "python": "3.10.22",
+  "env": "FINAL/envs/watermark",
+  "pillow_codecs": {
+    "jpg": "8.0",
+    "zlib": "1.3.1",
+    "libjpeg_turbo": "3.0.3"
+  },
+  "base_commit": "29629db2daaa2adbb8675820b295bd61cdd0313e",
+  "branch": "ruolan/traditional-div2k100"
+}

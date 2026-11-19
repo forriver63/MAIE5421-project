@@ -1,0 +1,11 @@
+{
+  "archive_sha256": "20dd31fd84d777bc1cf5d6b7654a3f569c0aec74458ae094122ad1d0489900fc",
+  "calibration_images_used": 0,
+  "pillow": "10.4.0",
+  "reference_manifest_sha256": "2529ccb7a43444bfce245b8732ba2e74d5b6028cd1d06b69a35060d05b379067",
+  "source_url": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+  "test_images": 100,
+  "verified_processed_png_sha256": 100,
+  "verified_source_sha256": 100,
+  "zlib": "1.3.1"
+}
