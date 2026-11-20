@@ -66,3 +66,5 @@ For the extended100-image study, additional baselines would need this image mani
 Run `python baseline/render_report.py` from the repository root to regenerate the English report and figures from the included summary CSV files. It does not rerun inference. `TEAM_REPORT_INSERT_EN.txt` is the concise section for integration into the team report; the HTML also includes detailed supplementary tables.
 
 The example config reproduces the selected formal working point; the historical strength search target was Full calibration PSNR 39.18387246 dB on images 0001–0020. The independent calibration check and all three formal HiDDeN operating points are retained. No test images were used to select strength.
+
+See the [100-image DIV2K comparison](div2k100/README.md) for the four learned baselines and per-condition outcomes.
